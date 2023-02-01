@@ -31,9 +31,17 @@ public:
     void setFun_rating(const float fun_rating);
     void setTheme(const string theme);
     
+private:
+        string mach_name;
+        string manu;
+        int year_prod;
+        float fun_rating;
+        string theme; 
+
+};  
 
 
-};
+
 
 
 
