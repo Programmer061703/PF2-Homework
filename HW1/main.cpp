@@ -97,7 +97,7 @@ string newYear_prodString;
 string newManu;
 string newFun_ratingString;
 string newTheme;
-
+string new_file; 
 
 
 while (x !=1){
@@ -110,20 +110,36 @@ switch (selection)
 {
 // Case 1 loads machines from ascii file
 case(1):
-    readFile("pinball.txt",Machine); 
+    cout << "Please input the name of the file you wish to process"<<endl; 
+    cin >> new_file; 
+    readFile(new_file,Machine); 
     break;
 // Case 2 insert machine of your choice
 case(2):
+    cout << "Input NewMachine name, year produced, manufacturere, funrating, themes all on one line seperated by commas like showed previously "<<endl;
     getline(cin,newMach_name,',');
+   
     getline(cin,newYear_prodString,',');
+    
     getline(cin,newManu,',');
+    
     getline(cin,newFun_ratingString,',');
-    getline(cin,newTheme,',');
+    
+    getline(cin,newTheme);
     addMachine(newMach_name,newYear_prodString,newManu,newFun_ratingString,newTheme); 
     
     break;
 // Case 3 find machine of specific year
 case (3):
+int year;
+cout <<"Please input the specific year you wish to find";
+cin >> year; 
+for (int i = 0; i < MAX; i++){
+    if (Machine[i].getYear_prod() == year){
+        Machine[i].print(); 
+    }
+}
+ 
 
     break;
 // Case 4 print out all information of all machines, gonna use for loop to itterate through the array
