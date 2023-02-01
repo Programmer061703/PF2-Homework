@@ -92,6 +92,12 @@ int main (){
 int x = 0; 
 int selection = 0; 
 
+string newMach_name;
+string newYear_prodString;
+string newManu;
+string newFun_ratingString;
+string newTheme;
+
 
 
 while (x !=1){
@@ -108,7 +114,13 @@ case(1):
     break;
 // Case 2 insert machine of your choice
 case(2):
-
+    getline(cin,newMach_name,',');
+    getline(cin,newYear_prodString,',');
+    getline(cin,newManu,',');
+    getline(cin,newFun_ratingString,',');
+    getline(cin,newTheme,',');
+    addMachine(newMach_name,newYear_prodString,newManu,newFun_ratingString,newTheme); 
+    
     break;
 // Case 3 find machine of specific year
 case (3):
