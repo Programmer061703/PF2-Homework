@@ -10,6 +10,7 @@ using namespace std;
         manu = "0";
         fun_rating = 0;
         theme = "0";
+        size = 0; 
 
 
     }
@@ -73,4 +74,5 @@ using namespace std;
     void Pinball::setTheme(const string themeIn){
         theme = themeIn; 
     }
+
     
