@@ -39,7 +39,7 @@ using namespace std;
          cout << year_prod; 
          cout << manu; 
          cout << fun_rating; 
-         cout << theme;
+         cout <<theme<<endl;
     }
 
 //Getters

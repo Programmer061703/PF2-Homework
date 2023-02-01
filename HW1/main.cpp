@@ -3,9 +3,9 @@
 #include <fstream>
 #include <string>
 using namespace std; 
-const int MAX = 1000; 
+const int MAX = 10; 
 Pinball Machine[MAX]; 
-int x = 0; 
+ 
 
 void printMenu(){
     cout << "\nWelcome to Pinball world please view our options bellow"<<endl; 
@@ -16,11 +16,11 @@ void printMenu(){
     cout << "Select 5 to exit the program"<<endl;
 }
 
-void readFile (const string filename, Pinball Temp[MAX]){
+void readFile ( string filename, Pinball Temp[MAX]){
     // open the file, check for failed
-
+    int y = 0;
     ifstream din;
-    din.open(filename.c_str());
+    din.open(filename);
 
     if (din.fail()) {
         cout << "File failed to load"<<endl;
@@ -49,22 +49,41 @@ void readFile (const string filename, Pinball Temp[MAX]){
         getline(din,theme);
 
 
-        Pinball newPinball(mach_name,year_prod,manu,fun_rating,theme);
-        if (!din.eof()){
-            
+        
+        
+     Pinball newPinball(mach_name,year_prod,manu,fun_rating,theme);
+    Temp[y]=newPinball;
+    y++;
 
             
-        }
+        
 
     }
 
 
-
+din.close();
     
 
 
 }
 
+void addMachine( string newMach_name,string newYear_prodString, string newManu, string newFun_ratingString, string newtheme ){
+int newYear_prod;
+float newFun_rating;
+
+newYear_prod = stoi(newYear_prodString);
+newFun_rating = stof(newFun_ratingString);
+
+Pinball newMachine(newMach_name,newYear_prod,newManu,newFun_rating,newtheme);
+for(int i=0; i < MAX; i++){
+    if (Machine[i].getMach_name() == "0"){
+        Machine[i] = newMachine; 
+        return; 
+    } 
+}
+
+    
+}
 
 
 
@@ -79,17 +98,13 @@ while (x !=1){
 
 printMenu();
 
-while (!(cin >> selection)){
-    cout << "Enter a valid number"<<endl; 
-    cin.clear();
-    cin.ignore(123,'\n');
-}
+cin >> selection; 
 
 switch (selection)
 {
 // Case 1 loads machines from ascii file
 case(1):
-
+    readFile("pinball.txt",Machine); 
     break;
 // Case 2 insert machine of your choice
 case(2):
@@ -101,11 +116,18 @@ case (3):
     break;
 // Case 4 print out all information of all machines, gonna use for loop to itterate through the array
 case (4):
+cout <<"Entered print statment"<<endl; 
+//for(int i; i<10; i++){
 
+for(int i=0; i < MAX; i++){
+Machine[i].print();
+
+}
+//}
     break;
 // Case 5 exit code
 case (5):
-
+    x = 1; 
     break; 
 }
     
