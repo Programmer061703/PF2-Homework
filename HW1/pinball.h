@@ -4,6 +4,7 @@
 
 #include <iostream>
 using namespace std;
+const int max_pinball = 10; 
 
 class Pinball
 {
@@ -37,6 +38,7 @@ private:
         int year_prod;
         float fun_rating;
         string theme; 
+        
 
 };  
 
