@@ -1,0 +1,199 @@
+Script started on 2023-02-01 19:40:32-0600
+]0;brw020@turing: ~/PF2/HW1[01;32mbrw020@turing[00m:[01;34m~/PF2/HW1[00m$ g++ 0[K-Wall [K]0;brw020@turing: ~/PF2/HW1[01;32mbrw020@turing[00m:[01;34m~/PF2/HW1[00m$ g++ -Wall @[K@[K@[K#[K$[K![K@[K#[K$[K#[K$[K$[K%[K*.cpp -o HW2[K1.exe
+]0;brw020@turing: ~/PF2/HW1[01;32mbrw020@turing[00m:[01;34m~/PF2/HW1[00m$ ls
+[0m[01;32mHW1.exe[0m  main.cpp  pinball.h  pinballl.cpp  pinball.txt  test.txt  williamsHW1.txt
+]0;brw020@turing: ~/PF2/HW1[01;32mbrw020@turing[00m:[01;34m~/PF2/HW1[00m$ ./HW1.exe
+
+Welcome to Pinball world please view our options bellow
+Select 1 to load machines from stored ascii file 
+Select 2 to insert a machine of your choice 
+Select 3 to find a machine of a specific year
+Select 4 to print out the information of all machines
+Select 5 to exit the program
+1
+Please input the name of the file you wish to process
+test.txt
+
+Welcome to Pinball world please view our options bellow
+Select 1 to load machines from stored ascii file 
+Select 2 to insert a machine of your choice 
+Select 3 to find a machine of a specific year
+Select 4 to print out the information of all machines
+Select 5 to exit the program
+4
+Entered print statment
+TwilightZone1993 Midway Manufacturing Company8.4 Flippers Poppers Twilight
+Theater of Magic1995 Midway Manufacturing Company8.3 Magic Wonder Fun
+Scared Stiff1996 Midway Manufacturing Company8.3 Scared Stiff Horror
+00000
+00000
+00000
+00000
+00000
+00000
+00000
+
+Welcome to Pinball world please view our options bellow
+Select 1 to load machines from stored ascii file 
+Select 2 to insert a machine of your choice 
+Select 3 to find a machine of a specific year
+Select 4 to print out the information of all machines
+Select 5 to exit the program
+2
+Please input the (Machine name, Year Produced, Manufacturer, Funrating, Themes) all seperated by a comma  
+T This is         Break your backs  , 18 2 756, And ck rack your oars men, 10, If you wish to r o prevale     ail
+
+Welcome to Pinball world please view our options bellow
+Select 1 to load machines from stored ascii file 
+Select 2 to insert a machine of your choice 
+Select 3 to find a machine of a specific year
+Select 4 to print out the information of all machines
+Select 5 to exit the program
+4
+Entered print statment
+TwilightZone1993 Midway Manufacturing Company8.4 Flippers Poppers Twilight
+Theater of Magic1995 Midway Manufacturing Company8.3 Magic Wonder Fun
+Scared Stiff1996 Midway Manufacturing Company8.3 Scared Stiff Horror
+
+Break your backs1756 And crack your oars men10 If you wish to prevail
+00000
+00000
+00000
+00000
+00000
+00000
+
+Welcome to Pinball world please view our options bellow
+Select 1 to load machines from stored ascii file 
+Select 2 to insert a machine of your choice 
+Select 3 to find a machine of a specific year
+Select 4 to print out the information of all machines
+Select 5 to exit the program
+3
+Please input the specific year you wish to find
+1756
+
+Break your backs1756 And crack your oars men10 If you wish to prevail
+
+Welcome to Pinball world please view our options bellow
+Select 1 to load machines from stored ascii file 
+Select 2 to insert a machine of your choice 
+Select 3 to find a machine of a specific year
+Select 4 to print out the information of all machines
+Select 5 to exit the program
+4
+Entered print statment
+TwilightZone1993 Midway Manufacturing Company8.4 Flippers Poppers Twilight
+Theater of Magic1995 Midway Manufacturing Company8.3 Magic Wonder Fun
+Scared Stiff1996 Midway Manufacturing Company8.3 Scared Stiff Horror
+
+Break your backs1756 And crack your oars men10 If you wish to prevail
+00000
+00000
+00000
+00000
+00000
+00000
+
+Welcome to Pinball world please view our options bellow
+Select 1 to load machines from stored ascii file 
+Select 2 to insert a machine of your choice 
+Select 3 to find a machine of a specific year
+Select 4 to print out the information of all machines
+Select 5 to exit the program
+1
+Please input the name of the file you wish to process
+test      pinball.exe   txt
+
+Welcome to Pinball world please view our options bellow
+Select 1 to load machines from stored ascii file 
+Select 2 to insert a machine of your choice 
+Select 3 to find a machine of a specific year
+Select 4 to print out the information of all machines
+Select 5 to exit the program
+4
+Entered print statment
+Medieval Madness1997   Williams8.3   fantasy, medieval, wizards/magic
+Black Knight 20001989   Williams7.9   Historical - knights
+The Addams Family1992   Bally8.2   Celebrities, fictional, licensed theme
+Sinbad1978  Gottlieb7.7  fantasy - myth and legend
+00000
+00000
+00000
+00000
+00000
+00000
+
+Welcome to Pinball world please view our options bellow
+Select 1 to load machines from stored ascii file 
+Select 2 to insert a machine of your choice 
+Select 3 to find a machine of a specific year
+Select 4 to print out the information of all machines
+Select 5 to exit the program
+2
+Please input the (Machine name, Year Produced, Manufacturer, Funrating, Themes) all seperated by a comma  
+Harpoons Thrust in the sky  , 1884, Aim directly for his Crooked BROW, 10, AND LOOK HIM STRIA   A RAIGHT IN THE EYEEEEEEEEEE
+
+Welcome to Pinball world please view our options bellow
+Select 1 to load machines from stored ascii file 
+Select 2 to insert a machine of your choice 
+Select 3 to find a machine of a specific year
+Select 4 to print out the information of all machines
+Select 5 to exit the program
+4
+Entered print statment
+Medieval Madness1997   Williams8.3   fantasy, medieval, wizards/magic
+Black Knight 20001989   Williams7.9   Historical - knights
+The Addams Family1992   Bally8.2   Celebrities, fictional, licensed theme
+Sinbad1978  Gottlieb7.7  fantasy - myth and legend
+
+Harpoons Thrust in the sky1884 Aim directly for his Crooked BROW10 AND LOOK HIM STRAIGHT IN THE EYEEEEEEEEEE
+00000
+00000
+00000
+00000
+00000
+
+Welcome to Pinball world please view our options bellow
+Select 1 to load machines from stored ascii file 
+Select 2 to insert a machine of your choice 
+Select 3 to find a machine of a specific year
+Select 4 to print out the information of all machines
+Select 5 to exit the program
+3
+Please input the specific year you wish to find
+1884
+
+Harpoons Thrust in the sky1884 Aim directly for his Crooked BROW10 AND LOOK HIM STRAIGHT IN THE EYEEEEEEEEEE
+
+Welcome to Pinball world please view our options bellow
+Select 1 to load machines from stored ascii file 
+Select 2 to insert a machine of your choice 
+Select 3 to find a machine of a specific year
+Select 4 to print out the information of all machines
+Select 5 to exit the program
+4
+Entered print statment
+Medieval Madness1997   Williams8.3   fantasy, medieval, wizards/magic
+Black Knight 20001989   Williams7.9   Historical - knights
+The Addams Family1992   Bally8.2   Celebrities, fictional, licensed theme
+Sinbad1978  Gottlieb7.7  fantasy - myth and legend
+
+Harpoons Thrust in the sky1884 Aim directly for his Crooked BROW10 AND LOOK HIM STRAIGHT IN THE EYEEEEEEEEEE
+00000
+00000
+00000
+00000
+00000
+
+Welcome to Pinball world please view our options bellow
+Select 1 to load machines from stored ascii file 
+Select 2 to insert a machine of your choice 
+Select 3 to find a machine of a specific year
+Select 4 to print out the information of all machines
+Select 5 to exit the program
+5
+]0;brw020@turing: ~/PF2/HW1[01;32mbrw020@turing[00m:[01;34m~/PF2/HW1[00m$ exir[Kt
+exit
+
+Script done on 2023-02-01 19:44:36-0600
