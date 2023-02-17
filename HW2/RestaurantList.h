@@ -20,7 +20,7 @@ public:
     //insert method
     void insertTail(string rest_name, float rest_rating, string meal_name, string typ_meal, float price);
     //Highest price
-    bool searchHigh(float price); 
+    bool searchHigh(); 
     //Change Price
     void changePrice(string meal,float price); 
     //Print
