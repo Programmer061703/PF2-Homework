@@ -22,14 +22,14 @@ RestNode::RestNode(string rest_name, float rest_rating, string meal_name, string
     Next = NULL; 
     
 }
-RestNode::RestNode(const RestNode & copy){
+RestNode::RestNode(const RestNode & node){
 
-    Rest_Name = copy.Rest_Name; 
-    Rest_Rating = copy.Rest_Rating;
-    Meal_Name = copy.Meal_Name;
-    Typ_Meal = copy.Typ_Meal;
-    Price = copy.Price; 
-    Next = copy.Next; 
+    Rest_Name = node.Rest_Name; 
+    Rest_Rating = node.Rest_Rating;
+    Meal_Name = node.Meal_Name;
+    Typ_Meal = node.Typ_Meal;
+    Price = node.Price; 
+    Next = node.Next; 
 
 
 

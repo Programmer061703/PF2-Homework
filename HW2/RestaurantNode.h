@@ -9,7 +9,7 @@ class RestNode
     public:
     RestNode();
     RestNode(string rest_name, float rest_rating, string meal_name, string type_meal, float price);
-    RestNode(const RestNode & copy); 
+    RestNode(const RestNode & node); 
     ~RestNode();
 
     //Getter methods
