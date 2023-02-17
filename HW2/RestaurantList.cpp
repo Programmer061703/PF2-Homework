@@ -57,31 +57,29 @@ RestNode *ptr = Head; // Creates new list set to the values of Head
     }
  }
     //Highest price
-bool RestaurantList:: searchHigh(){
+void RestaurantList:: searchHigh(){
 RestNode *ptr = Head; 
+RestNode *high; 
 int temp = 0;
-float high_price;
-while((ptr!= NULL)&&(ptr->getNext()!= NULL)){
-if(ptr->getPrice()>= temp){
-    high_price = ptr->getPrice(); 
-    temp = 1; 
-}
-
-
-if (temp == 0){
-    cout <<endl<<"Student Not Found"<<endl; 
-    return false; 
+float high_price = 0;
+while((ptr!= NULL)){
+if(high_price <= ptr->getPrice() ){
+    high_price = ptr->getPrice();
+    delete high; 
+    high = ptr;  
+    
 }
 ptr = ptr->getNext();
-
 }
+high->print(); 
+ 
 } 
     //Change Price
 void RestaurantList::changePrice(string meal,float price){
 RestNode *ptr = Head; 
 int temp = 0;
-float temp_price = 0; 
-while((ptr!= NULL)&&(ptr->getNext()!= NULL)){
+ 
+while((ptr!= NULL)){
     if (meal == ptr->getMeal_Name()){
          cout << endl<< meal <<"Found"<<endl;
          ptr->setPrice(price);  
@@ -91,7 +89,9 @@ while((ptr!= NULL)&&(ptr->getNext()!= NULL)){
 if (temp == 0){
     cout <<endl<<"Meal not Found"<<endl; 
 }
-}}
+ptr = ptr->getNext();
+}
+}
 
     //Print
 void RestaurantList::print() const {

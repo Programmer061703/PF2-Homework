@@ -84,5 +84,5 @@ void RestNode::setNext(RestNode * next){
 
 void RestNode::print() const{
 cout << "Restaurant Name: "<< Rest_Name << endl
-    << "Rating: "<<endl << Rest_Rating << "Meal Name: "<< Meal_Name <<endl<< "Type of Meal "<<Typ_Meal <<endl << "Price: "<< Price << endl; 
+    << "Rating: "<<endl << Rest_Rating <<endl<< "Meal Name: "<< Meal_Name <<endl<< "Type of Meal "<<Typ_Meal <<endl << "Price: "<< Price << endl; 
 }
