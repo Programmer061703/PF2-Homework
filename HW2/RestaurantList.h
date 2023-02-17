@@ -22,12 +22,13 @@ public:
     //Highest price
     bool searchHigh(float price); 
     //Change Price
-    void changePrice(string meal); 
+    void changePrice(string meal,float price); 
     //Print
-    void print(); 
+    void print() const; 
 
 private:
     RestNode * Head; 
+    
 };
 
 
