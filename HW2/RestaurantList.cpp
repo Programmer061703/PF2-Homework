@@ -57,15 +57,13 @@ RestNode *ptr = Head; // Creates new list set to the values of Head
     }
  }
     //Highest price
-bool RestaurantList:: searchHigh(float price){
+bool RestaurantList:: searchHigh(){
 RestNode *ptr = Head; 
 int temp = 0;
 while((ptr!= NULL)&&(ptr->getNext()!= NULL)){
-    if (price == ptr->getPrice()){
-        ptr->print();
-        return true;
-        temp = 1; 
-    }
+
+
+
 if (temp == 0){
     cout <<endl<<"Student Not Found"<<endl; 
     return false; 
