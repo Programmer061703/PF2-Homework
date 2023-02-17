@@ -62,7 +62,6 @@ void RestaurantList:: searchHigh(){
     //The Code looks through the Linked list and compares each price the next price. If the price is larger it stores it in the high node. 
 RestNode *ptr = Head; 
 RestNode *high; 
-int temp = 0;
 float high_price = 0;
 while((ptr!= NULL)){
 if(high_price <= ptr->getPrice() ){
