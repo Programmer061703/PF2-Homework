@@ -64,14 +64,15 @@ int temp = 0;
 float high_price = 0;
 while((ptr!= NULL)){
 if(high_price <= ptr->getPrice() ){
-    high_price = ptr->getPrice();
-    delete high; 
+    high_price = ptr->getPrice(); 
     high = ptr;  
     
 }
 ptr = ptr->getNext();
 }
+
 high->print(); 
+
  
 } 
     //Change Price
