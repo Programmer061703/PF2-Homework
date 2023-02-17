@@ -2,10 +2,26 @@
 #include"iostream"
 using namespace std; 
 
+
+
+void addMeal(RestaurantList &meal){
+    string name, rating, 
+    cout << "Please Input Restraurant name"<<endl
+
+
+}
+
+
+
+
 int main(){
 
-    RestNode meal;
 
+    
+    RestaurantList meal;
+
+
+    
 
     while(true){
         int selection;
@@ -18,17 +34,17 @@ int main(){
     
     switch(selection){
 
-        case(1):
-            string name;
-            float rating;
-            string meal;
-            string type_meal; 
-            float price; 
+        
+            break; 
+
+        case(2):
 
 
-    }
+}
+        
 
 
-                }
+
+}
 
 }
