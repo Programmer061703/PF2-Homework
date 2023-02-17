@@ -41,6 +41,7 @@ void change_price(RestaurantList &meal){
 }
 
 void menu(){
+    cout << endl; 
     cout << "Welcome to the restraunt database"<<endl;
     cout << "Press 1 to add a Meal"<<endl; 
     cout << "Press 2 to search for the highest price"<<endl; 

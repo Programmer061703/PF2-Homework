@@ -58,6 +58,8 @@ RestNode *ptr = Head; // Creates new list set to the values of Head
  }
     //Highest price
 void RestaurantList:: searchHigh(){
+    //In order to search for the highest 2 nodes are created, one that stores the list Head and another empty one.
+    //The Code looks through the Linked list and compares each price the next price. If the price is larger it stores it in the high node. 
 RestNode *ptr = Head; 
 RestNode *high; 
 int temp = 0;
@@ -82,9 +84,9 @@ int temp = 0;
  
 while((ptr!= NULL)){
     if (meal == ptr->getMeal_Name()){
-         cout << endl<< meal <<"Found"<<endl;
+         cout << endl<< meal <<" Found"<<endl;
          ptr->setPrice(price);  
-        cout <<endl<< "Price Set of "<<meal<<"set to $"<<price<<endl; 
+        cout <<endl<< "Price Set of "<<meal<<" set to $"<<price<<endl; 
         temp = 1; 
     }
 if (temp == 0){
@@ -99,8 +101,10 @@ void RestaurantList::print() const {
     RestNode *ptr = Head; 
     
     while(ptr != NULL){
+        cout <<endl; 
         ptr->print();
         ptr=ptr->getNext();
+        
     }
 
 }
