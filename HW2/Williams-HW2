@@ -1,0 +1,158 @@
+Script started on 2023-02-17 23:23:38-0600
+]0;brw020@turing: ~/PF2/HW2[01;32mbrw020@turing[00m:[01;34m~/PF2/HW2[00m$ ls[K./[K]0;brw020@turing: ~/PF2/HW2[01;32mbrw020@turing[00m:[01;34m~/PF2/HW2[00m$ ./ main.exe
+bash: ./: Is a directory
+]0;brw020@turing: ~/PF2/HW2[01;32mbrw020@turing[00m:[01;34m~/PF2/HW2[00m$ ./main.exe
+
+Welcome to the restraunt database
+Press 1 to add a Meal
+Press 2 to search for the highest price
+Press 3 to change the price of a specific meal
+Press 4 to print the database
+Press 5 to exit the database
+1
+Input the name of the Restaurant
+Burger Kn ing
+Input the Rating of the Restaurant
+8
+Input the Name of the Meal
+Burger
+Input the Meal type
+Main
+Input the Price
+20
+Added Meal Succefully
+
+Welcome to the restraunt database
+Press 1 to add a Meal
+Press 2 to search for the highest price
+Press 3 to change the price of a specific meal
+Press 4 to print the database
+Press 5 to exit the database
+1
+Input the name of the Restaurant
+Papa Johns
+Input the Rating of the Restaurant
+4
+Input the Name of the Meal
+Pizza
+Input the Meal type
+Main
+Input the Price
+30
+Added Meal Succefully
+
+Welcome to the restraunt database
+Press 1 to add a Meal
+Press 2 to search for the highest price
+Press 3 to change the price of a specific meal
+Press 4 to print the database
+Press 5 to exit the database
+1
+Input the name of the Restaurant
+Little Ceasers
+Input the Rating of the Restaurant
+8
+Input the Name of the Meal
+Pizza
+Input the Meal type
+main
+Input the Price
+10
+Added Meal Succefully
+
+Welcome to the restraunt database
+Press 1 to add a Meal
+Press 2 to search for the highest price
+Press 3 to change the price of a specific meal
+Press 4 to print the database
+Press 5 to exit the database
+2
+Restaurant Name: Papa Johns
+Rating: 
+4
+Meal Name: Pizza
+Type of Meal Main
+Price: 30
+
+Welcome to the restraunt database
+Press 1 to add a Meal
+Press 2 to search for the highest price
+Press 3 to change the price of a specific meal
+Press 4 to print the database
+Press 5 to exit the database
+3
+Please input the name of the meal you wish to change
+Pizza
+Please input the price you wish to change this meal to
+50
+
+Meal not Found
+
+Pizza Found
+
+Price Set of Pizza set to $50
+
+Pizza Found
+
+Price Set of Pizza set to $50
+Pizza Price sucesfuly changed to $50
+
+Welcome to the restraunt database
+Press 1 to add a Meal
+Press 2 to search for the highest price
+Press 3 to change the price of a specific meal
+Press 4 to print the database
+Press 5 to exit the database
+4
+
+Restaurant Name: Burger King
+Rating: 
+8
+Meal Name: Burger
+Type of Meal Main
+Price: 20
+
+Restaurant Name: Papa Johns
+Rating: 
+4
+Meal Name: Pizza
+Type of Meal Main
+Price: 50
+
+Restaurant Name: Little Ceasers
+Rating: 
+8
+Meal Name: Pizza
+Type of Meal main
+Price: 50
+
+Welcome to the restraunt database
+Press 1 to add a Meal
+Press 2 to search for the highest price
+Press 3 to change the price of a specific meal
+Press 4 to print the database
+Press 5 to exit the database
+5
+
+    ____       __                      __           _____             __  __       _____           __          
+   / __ \___  / /___  ___________     / /_____     / ___/____  __  __/ /_/ /_     / ___/__  ______/ /___ _____ 
+  / /_/ / _ \/ __/ / / / ___/ __ \   / __/ __ \    \__ \/ __ \/ / / / __/ __ \    \__ \/ / / / __  / __ `/ __ \
+ / _, _/  __/ /_/ /_/ / /  / / / /  / /_/ /_/ /   ___/ / /_/ / /_/ / /_/ / / /   ___/ / /_/ / /_/ / /_/ / / / /
+/_/ |_|\___/\__/\__,_/_/  /_/ /_/   \__/\____/   /____/\____/\__,_/\__/_/ /_/   /____/\__,_/\__,_/\__,_/_/ /_/ 
+   
+   
+                                                                                                                                                                                                                      
+
+
+After many years of Turmoil and interferences from forgien powers the glorious country of South Sudan has begun its millitary conquest
+Assembling a battalion of Panzer II from the fallen Third Reich their fearless leader Promises to restore South Sudan to its former Glory
+The March of Panzers and Soldiers began March 3rd 2045 as they began their frontal assault on Sudan deeming them Inferrior to the might of South Sudan
+Sudan fell within 3 months as the years of internal warfare caused the government to destabalize when South Sudan began its march
+As South Sudan planted its glorious flag on its rival, the neihboring country CHAD ammassed a force of 50,000 to counterattack the defensless country of South Sudan
+3 Months of constant seige from CHAD, South Sudans forces were to far away to assist, the Emperor activated the last plan
+After the fall of Soviet Union in 1991 South Sudan had aquired a large nuclear arsenal, as a last resort began firing them at every mainland it could reach
+The Nuclear Fallout plunged the world into a Thousand year darkness, other than that GLORY TO SOUTH SUDAN
+]0;brw020@turing: ~/PF2/HW2[01;32mbrw020@turing[00m:[01;34m~/PF2/HW2[00m$ exit
+exit
+
+Script done on 2023-02-17 23:25:26-0600

@@ -104,4 +104,24 @@ int main(){
 
 }
 
+cout << R"(
+    ____       __                      __           _____             __  __       _____           __          
+   / __ \___  / /___  ___________     / /_____     / ___/____  __  __/ /_/ /_     / ___/__  ______/ /___ _____ 
+  / /_/ / _ \/ __/ / / / ___/ __ \   / __/ __ \    \__ \/ __ \/ / / / __/ __ \    \__ \/ / / / __  / __ `/ __ \
+ / _, _/  __/ /_/ /_/ / /  / / / /  / /_/ /_/ /   ___/ / /_/ / /_/ / /_/ / / /   ___/ / /_/ / /_/ / /_/ / / / /
+/_/ |_|\___/\__/\__,_/_/  /_/ /_/   \__/\____/   /____/\____/\__,_/\__/_/ /_/   /____/\__,_/\__,_/\__,_/_/ /_/ 
+   
+   
+                                                                                                                                                                                                                      
+)" << '\n' << endl; 
+
+cout <<"After many years of Turmoil and interferences from forgien powers the glorious country of South Sudan has begun its millitary conquest"<<endl; 
+cout <<"Assembling a battalion of Panzer II from the fallen Third Reich their fearless leader Promises to restore South Sudan to its former Glory"<<endl;
+cout <<"The March of Panzers and Soldiers began March 3rd 2045 as they began their frontal assault on Sudan deeming them Inferrior to the might of South Sudan"<<endl; 
+cout << "Sudan fell within 3 months as the years of internal warfare caused the government to destabalize when South Sudan began its march"<<endl; 
+cout <<"As South Sudan planted its glorious flag on its rival, the neihboring country CHAD ammassed a force of 50,000 to counterattack the defensless country of South Sudan"<<endl;
+cout <<"3 Months of constant seige from CHAD, South Sudans forces were to far away to assist, the Emperor activated the last plan"<<endl; 
+cout<<"After the fall of Soviet Union in 1991 South Sudan had aquired a large nuclear arsenal, as a last resort began firing them at every mainland it could reach"<<endl;
+cout<<"The Nuclear Fallout plunged the world into a Thousand year darkness, other than that GLORY TO SOUTH SUDAN"<<endl; 
+
 }
