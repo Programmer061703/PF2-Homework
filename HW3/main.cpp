@@ -60,6 +60,40 @@ void menu(){
     cout <<"Press 5 to exit the database"<<endl; 
 }
 
+//Single recursvie bianary search
+
+int searchBianary(int itterations,vector<Password> passwords, int max, int min, string search){
+    
+     
+    if (min>=max){
+        return -1; 
+    }
+    int mid = min + (max - min) / 2; 
+
+    if (search == passwords[mid].getPlaintext()){
+        
+        cout << "The value has been found at the middle of the list and has gone through"<< itterations << "To finish this function call"<<endl; 
+
+        return mid; 
+
+    }
+    //Search Left side
+    if(search < passwords[mid].getPlaintext()){
+
+        return searchBianary(itterations + 1, passwords, mid - 1, min, search);
+    }
+
+    //Search Right side
+    if(search > passwords[mid].getPlaintext()){
+
+        return searchBianary(itterations + 1, passwords, max, min + 1, search);
+
+    }
+    
+     cout << "The value has been found and the number of itterations were"<<itterations<<endl; 
+    
+}
+
 
 
 
@@ -68,6 +102,7 @@ void menu(){
 //----------------------------------------------
 int main()
 {
+    int num_itter = 0;
     int x = 1;
     //vector for hash sorted file
     vector<Password> hash;
