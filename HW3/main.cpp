@@ -50,12 +50,23 @@ bool readFile_given_hashes(string filename, vector<string> &list)
     return 1;
 }
 
+void menu(){
+    cout << endl; 
+    cout << "Welcome to the restraunt database"<<endl;
+    cout << "Press 1 to add a Meal"<<endl; 
+    cout << "Press 2 to search for the highest price"<<endl; 
+    cout <<"Press 3 to change the price of a specific meal"<<endl;
+    cout <<"Press 4 to print the database"<<endl;
+    cout <<"Press 5 to exit the database"<<endl; 
+}
+
 
 
 
 //----------------------------------------------
 int main()
 {
+    int x = 1;
     //vector for hash sorted file
     vector<Password> hash;
     //vector for password sorted file
@@ -67,7 +78,48 @@ int main()
     readFile("sorted_password_indexed_list.txt",password);
     readFile_given_hashes("hashes_to_search.txt",given_hashes);
 
-    // ADD YOUR MENU, USER CHOICE, AND IMPLEMENT MENU OPTIONS HERE
+
+
+
+   while(x != 1){
+        int selection;
+        menu();
+        while(!(cin >> selection)){
+    cout << "Please enter a valid number" << endl; 
+    cin.clear();
+    cin.ignore(123,'\n');
+        }
+     
+
+    switch(selection){
+        case(1):
+     
+
+        break; 
+
+        case(2):
+        
+
+        break;
+
+        case(3):
+         
+        break;
+
+        case(4):
+        
+        break;
+
+        case(5):
+         
+        break;
+
+        case(6):
+        x=1;
+        break;
+
+
+}
 
     return 0;
 }
