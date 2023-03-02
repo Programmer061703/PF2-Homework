@@ -6,14 +6,24 @@ using namespace std;
 
 class Password
 {
-    public:
+public:
    Password();
    Password(string plaintext, int rank, string hash );
    ~Password(); 
 
     //Getters
+    string getPlaintext();
+    int getRank();
+    string getHash();
+
+    //Setters
+    void setPlaintext(string plaintext);
+    void setRank(int rank);
+    void setHash(string hash); 
+    void print();
+
     
-    private:
+private:
     string Plaintext;
     int Rank; 
     string Hash; 
