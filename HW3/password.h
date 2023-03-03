@@ -9,6 +9,7 @@ class Password
 public:
    Password();
    Password(string plaintext, int rank, string hash );
+   Password(const Password & copy);
    ~Password(); 
 
     //Getters
