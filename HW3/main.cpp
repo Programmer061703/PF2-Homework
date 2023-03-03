@@ -88,7 +88,7 @@ int searchBianaryPasswords(int itterations,vector<Password> passwords, int max, 
     //Search Right side
     if(search > passwords[mid].getPlaintext()){
 
-        return searchBianaryPasswords(itterations + 1, passwords, max, min + 1, search);
+        return searchBianaryPasswords(itterations + 1, passwords, max, mid + 1, search);
 
     }
     
@@ -121,7 +121,7 @@ int searchBianaryHashes(int itterations,vector<Password>hash, int max, int min, 
     //Search Right side
     if(search > stoi(hash[mid].getHash(),0,16)){
 
-        return searchBianaryHashes(itterations + 1, hash, max, min + 1, search);
+        return searchBianaryHashes(itterations + 1, hash, max, mid + 1, search);
 
     }
     
