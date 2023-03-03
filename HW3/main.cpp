@@ -61,19 +61,19 @@ void menu(){
     cout <<" 6)Exit system"<<endl; 
 }
 
-//Single recursvie bianary search
+//Bianary search funtions 
 
 int searchBianaryPasswords(int itterations,vector<Password> passwords, int max, int min, string search){
     
      
-    if (min>=max){
+    if (min>max){
         return -1; 
     }
     int mid = min + (max - min) / 2; 
 
     if (search == passwords[mid].getPlaintext()){
         
-        cout << "The value has been found at the middle of the list and has gone through"<< itterations << "To finish this function call"<<endl; 
+        cout << "The value has been found and has gone through "<< itterations << " number of itterations"<<endl; 
         passwords[mid].print(); 
 
         return mid; 
@@ -106,8 +106,9 @@ int searchBianaryHashes(int itterations,vector<Password>hash, int max, int min, 
 
     if (search == stoi(hash[mid].getHash(),0,16)){
         
-        cout << "The value has been found and has gone through "<< itterations << "To finish this function call"<<endl;
+       
         hash[mid].print();  
+         cout << "The value has been found and has gone through "<< itterations << "Number of itterations" <<endl;
 
         return mid; 
 
@@ -128,10 +129,57 @@ int searchBianaryHashes(int itterations,vector<Password>hash, int max, int min, 
       
 }
 
-int searchItterative(int itterations, vector<Password> passwords, int){
+//Search Itterativly 
+int searchItterative(int itterations, vector<Password> passwords, int max, int min, string search){
+while (min <= max){
+    int mid = min +(max - min)/2;
 
+    if(search == passwords[mid].getPlaintext() ){
+        passwords[mid].print();
+
+        cout <<"This password was found after "<< itterations<<"number of itterations"<<endl; 
+
+        return mid; 
+
+    }
+
+    if(search >passwords[mid].getPlaintext() ){
+        min = mid + 1;
+        itterations = itterations + 1; 
+    }
+
+    else{
+        max = mid - 1;
+        itterations = itterations + 1;
+    }
+     
+}
+return -1;
 }
 
+//Searches the list linearly, I tried usinga for loop to search the list but it would break it for some reason. So I just implamented a while loop the same way as a for loop and it fixed it 
+//Why does this work but a for loop does not Lifes greatest mystery
+int searchLinearly(int itterations, vector<Password> passwords, string search){
+int x=0; 
+
+while (x < passwords.size()){
+
+    if (passwords[x].getPlaintext()==search){
+        cout << "The password was found after "<<itterations<<" using a linear search"<<endl;
+        passwords[x].print(); 
+        break; 
+    }
+    x++;
+    itterations++; 
+}
+
+return -1; 
+
+
+ 
+
+
+}
 //int searchItterativePassowrd(int itterations )
 
 //----------------------------------------------
@@ -162,8 +210,8 @@ int main()
     cin.ignore(123,'\n');
         }
      
-    string Hinput;
-    string Pinput;
+    string Hinput; // Hash input
+    string Pinput ; // Password input  
     switch(selection){
         case(1):
      
@@ -172,23 +220,37 @@ int main()
 
         case(2):
 
+        cout <<"Please input the password you wish to search for. *Note this will be faster than the itterative search*"<<endl; 
         cin >> Pinput;
         searchBianaryPasswords(0,password,password.size()-1,0,Pinput);
 
         break;
 
         case(3):
-         
+         cout << "Please input the hash you wish to search for"<<endl; 
         cin >> Hinput; 
         searchBianaryHashes(0,hash,hash.size()-1,0, stoi(Hinput,0,16) );
         break;
 
         case(4):
+
+        cout << "Please input the password you wish to search for"<<endl;
+        cout <<"Once input is provided the code will use a Bianary function to check for the password then use a itterative function to search for the same password"<<endl;
+        cout <<"Each functions will give a number of itterations which corosponds to how many times calculations were done, fewer itterations better performance"<<endl;
+        cin >> Pinput; 
+        searchBianaryPasswords(0,password,password.size()-1,0,Pinput);
+
+         searchLinearly(0,password,Pinput);
+
+         
+
         
         break;
 
         case(5):
-         
+        cout << "Please input the password you wish to search itterativly for. *Note this will take longer than Bianary search*"<<endl;
+        cin >> Pinput; 
+          searchItterative(0,password,password.size()-1,0,Pinput);
         break;
 
         case(6):
