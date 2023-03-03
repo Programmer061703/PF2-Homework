@@ -52,17 +52,18 @@ bool readFile_given_hashes(string filename, vector<string> &list)
 
 void menu(){
     cout << endl; 
-    cout << "Welcome to the restraunt database"<<endl;
-    cout << "Press 1 to add a Meal"<<endl; 
-    cout << "Press 2 to search for the highest price"<<endl; 
-    cout <<"Press 3 to change the price of a specific meal"<<endl;
-    cout <<"Press 4 to print the database"<<endl;
-    cout <<"Press 5 to exit the database"<<endl; 
+    cout << "Welcome to the Password database"<<endl;
+    cout << "1)Search recursively two passwords and pull all the passwords between them"<<endl; 
+    cout << "2)Search recursively by password"<<endl; 
+    cout <<" 3)Search recursively of given file by hash"<<endl;
+    cout <<" 4)Compare linear and binary search"<<endl;
+    cout <<" 5)Iterative binary search for password"<<endl; 
+    cout <<" 6)Exit system"<<endl; 
 }
 
 //Single recursvie bianary search
 
-int searchBianary(int itterations,vector<Password> passwords, int max, int min, string search){
+int searchBianaryPasswords(int itterations,vector<Password> passwords, int max, int min, string search){
     
      
     if (min>=max){
@@ -73,6 +74,7 @@ int searchBianary(int itterations,vector<Password> passwords, int max, int min, 
     if (search == passwords[mid].getPlaintext()){
         
         cout << "The value has been found at the middle of the list and has gone through"<< itterations << "To finish this function call"<<endl; 
+        passwords[mid].print(); 
 
         return mid; 
 
@@ -80,30 +82,63 @@ int searchBianary(int itterations,vector<Password> passwords, int max, int min, 
     //Search Left side
     if(search < passwords[mid].getPlaintext()){
 
-        return searchBianary(itterations + 1, passwords, mid - 1, min, search);
+        return searchBianaryPasswords(itterations + 1, passwords, mid - 1, min, search);
     }
 
     //Search Right side
     if(search > passwords[mid].getPlaintext()){
 
-        return searchBianary(itterations + 1, passwords, max, min + 1, search);
+        return searchBianaryPasswords(itterations + 1, passwords, max, min + 1, search);
 
     }
     
-     cout << "The value has been found and the number of itterations were"<<itterations<<endl; 
+ 
     
 }
 
+int searchBianaryHashes(int itterations,vector<Password>hash, int max, int min, int search){
 
+ 
+    if (min>=max){
+        return -1; 
+    }
+    int mid = min + (max - min) / 2; 
 
+    if (search == stoi(hash[mid].getHash(),0,16)){
+        
+        cout << "The value has been found and has gone through "<< itterations << "To finish this function call"<<endl;
+        hash[mid].print();  
 
+        return mid; 
 
+    }
+    //Search Left side
+    if(search < stoi(hash[mid].getHash(),0,16)){
+
+        return searchBianaryHashes(itterations + 1, hash, mid - 1, min, search);
+    }
+
+    //Search Right side
+    if(search > stoi(hash[mid].getHash(),0,16)){
+
+        return searchBianaryHashes(itterations + 1, hash, max, min + 1, search);
+
+    }
+    
+      
+}
+
+int searchItterative(int itterations, vector<Password> passwords, int){
+
+}
+
+//int searchItterativePassowrd(int itterations )
 
 //----------------------------------------------
 int main()
 {
     int num_itter = 0;
-    int x = 1;
+    int x = 0;
     //vector for hash sorted file
     vector<Password> hash;
     //vector for password sorted file
@@ -111,8 +146,8 @@ int main()
     //vector for hashes to search for
     vector<string> given_hashes;
 
-    readFile("sorted_hash_indexed_list.txt",hash);
-    readFile("sorted_password_indexed_list.txt",password);
+    readFile("sorted_hashe_index_list.txt",hash);
+    readFile("sorted_passwords_index_list.txt",password);
     readFile_given_hashes("hashes_to_search.txt",given_hashes);
 
 
@@ -127,7 +162,8 @@ int main()
     cin.ignore(123,'\n');
         }
      
-
+    string Hinput;
+    string Pinput;
     switch(selection){
         case(1):
      
@@ -135,12 +171,16 @@ int main()
         break; 
 
         case(2):
-        
+
+        cin >> Pinput;
+        searchBianaryPasswords(0,password,password.size()-1,0,Pinput);
 
         break;
 
         case(3):
          
+        cin >> Hinput; 
+        searchBianaryHashes(0,hash,hash.size()-1,0, stoi(Hinput,0,16) );
         break;
 
         case(4):
@@ -158,7 +198,8 @@ int main()
 
 }
 
-    return 0;
+    
 
 }
+return 0;
 }
