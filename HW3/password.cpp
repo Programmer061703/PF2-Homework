@@ -13,6 +13,11 @@ Hash = "0";
     Hash = hash;
     
    }
+   Password::Password(const Password & copy){
+      Hash =copy.Hash;
+      Plaintext = copy.Plaintext;
+     Rank = copy.Rank;
+   }
    Password::~Password(){
 
    } 
