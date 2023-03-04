@@ -1,0 +1,370 @@
+Script started on 2023-03-03 22:35:44-0600
+]0;brw020@turing: ~/PF2/HW3[01;32mbrw020@turing[00m:[01;34m~/PF2/HW3[00m$ g++ -Wall *.cpp -o main.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pscript Williams-HW3g++ -Wall *.cpp -o main.exe
+[01m[Kmain.cpp:[m[K In function ‘[01m[Kint searchPrint(int, std::vector<Password>, int, int, std::__cxx11::string, std::__cxx11::string)[m[K’:
+[01m[Kmain.cpp:139:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+       int [01;35m[Kx[m[K; 
+           [01;35m[K^[m[K
+[01m[Kmain.cpp:167:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+[01m[Kmain.cpp:[m[K In function ‘[01m[Kint searchLinearly(int, std::vector<Password>, std::__cxx11::string)[m[K’:
+[01m[Kmain.cpp:201:10:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+ while ([01;35m[Kx < passwords.size()[m[K){
+        [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kmain.cpp:274:25:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+         for(int x =0; [01;35m[Kx < given_hashes.size()[m[K;x++){
+                       [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.cpp:[m[K In function ‘[01m[Kint searchBianaryPasswords(int, std::vector<Password>, int, int, std::__cxx11::string)[m[K’:
+[01m[Kmain.cpp:100:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+[01m[Kmain.cpp:[m[K In function ‘[01m[Kint searchBianaryHashes(int, std::vector<Password>, int, int, int)[m[K’:
+[01m[Kmain.cpp:134:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+ [01;35m[K}[m[K
+ [01;35m[K^[m[K
+]0;brw020@turing: ~/PF2/HW3[01;32mbrw020@turing[00m:[01;34m~/PF2/HW3[00m$ g++ -Wall *.cpp -o main.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pscript Williams-HW3ls[Kcd HW3[4Plscd PF2[4Plsscript Williams-HW2g++ -Wall *.cpp -o main.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd HW2PF2[2Pexit./main.exe main.exels[K./ main.exe[1Pmain.exe
+
+Welcome to the Password database
+1)Search recursively two passwords and pull all the passwords between them
+2)Search recursively by password
+ 3)Search recursively of given file by hash
+ 4)Compare linear and binary search
+ 5)Iterative binary search for password
+ 6)Exit system
+1
+Please input 2 passwords you wish to search, then this will display the passwords and print out the passwords between each of them
+thecat
+Please input the second password you wish to search for
+thing
+
+Password:thecat
+Rank: 3123
+Hash: 9b65d1
+The value has been found and has gone through 12 number of itterations using Bianary Search
+
+Password:thing
+Rank: 4345
+Hash: 8afc1e
+The value has been found and has gone through 12 number of itterations using Bianary Search
+
+Printing all data between two variables
+
+Password:thecat
+Rank: 3123
+Hash: 9b65d1
+
+Password:thecrow
+Rank: 6182
+Hash: dffee2
+
+Password:thecure
+Rank: 5696
+Hash: fdae90
+
+Password:thedog
+Rank: 3672
+Hash: bdd9e6
+
+Password:thedon
+Rank: 6945
+Hash: 9ea98b
+
+Password:thedoors
+Rank: 4113
+Hash: 6f0907
+
+Password:thedude
+Rank: 3906
+Hash: dcd575
+
+Password:theend
+Rank: 3460
+Hash: a77224
+
+Password:theforce
+Rank: 6789
+Hash: 72c144
+
+Password:thegame
+Rank: 1806
+Hash: b99cc4
+
+Password:thegreat
+Rank: 3816
+Hash: 4df20a
+
+Password:their
+Rank: 7318
+Hash: 0e66be
+
+Password:theking
+Rank: 2331
+Hash: 577e44
+
+Password:thelma
+Rank: 4596
+Hash: 19f3cb
+
+Password:theman
+Rank: 287
+Hash: 73005d
+
+Password:theodore
+Rank: 2727
+Hash: 56a525
+
+Password:theone
+Rank: 965
+Hash: d3e256
+
+Password:there
+Rank: 5444
+Hash: d850f0
+
+Password:theresa
+Rank: 3156
+Hash: f60bf9
+
+Password:these
+Rank: 8259
+Hash: bd4c4e
+
+Password:thesims
+Rank: 3122
+Hash: c5e53f
+
+Password:thethe
+Rank: 5936
+Hash: 0e8754
+
+Password:thierry
+Rank: 7999
+Hash: 66aad1
+
+Password:thing
+Rank: 4345
+Hash: 8afc1e
+
+Welcome to the Password database
+1)Search recursively two passwords and pull all the passwords between them
+2)Search recursively by password
+ 3)Search recursively of given file by hash
+ 4)Compare linear and binary search
+ 5)Iterative binary search for password
+ 6)Exit system
+2 1
+Please input 2 passwords you wish to search, then this will display the passwords and print out the passwords between each of them
+thing
+Please input the second password you wish to search for
+thecat
+
+Password:thing
+Rank: 4345
+Hash: 8afc1e
+The value has been found and has gone through 12 number of itterations using Bianary Search
+
+Password:thecat
+Rank: 3123
+Hash: 9b65d1
+The value has been found and has gone through 12 number of itterations using Bianary Search
+
+Printing all data between two variables
+
+Password:thecat
+Rank: 3123
+Hash: 9b65d1
+
+Password:thecrow
+Rank: 6182
+Hash: dffee2
+
+Password:thecure
+Rank: 5696
+Hash: fdae90
+
+Password:thedog
+Rank: 3672
+Hash: bdd9e6
+
+Password:thedon
+Rank: 6945
+Hash: 9ea98b
+
+Password:thedoors
+Rank: 4113
+Hash: 6f0907
+
+Password:thedude
+Rank: 3906
+Hash: dcd575
+
+Password:theend
+Rank: 3460
+Hash: a77224
+
+Password:theforce
+Rank: 6789
+Hash: 72c144
+
+Password:thegame
+Rank: 1806
+Hash: b99cc4
+
+Password:thegreat
+Rank: 3816
+Hash: 4df20a
+
+Password:their
+Rank: 7318
+Hash: 0e66be
+
+Password:theking
+Rank: 2331
+Hash: 577e44
+
+Password:thelma
+Rank: 4596
+Hash: 19f3cb
+
+Password:theman
+Rank: 287
+Hash: 73005d
+
+Password:theodore
+Rank: 2727
+Hash: 56a525
+
+Password:theone
+Rank: 965
+Hash: d3e256
+
+Password:there
+Rank: 5444
+Hash: d850f0
+
+Password:theresa
+Rank: 3156
+Hash: f60bf9
+
+Password:these
+Rank: 8259
+Hash: bd4c4e
+
+Password:thesims
+Rank: 3122
+Hash: c5e53f
+
+Password:thethe
+Rank: 5936
+Hash: 0e8754
+
+Password:thierry
+Rank: 7999
+Hash: 66aad1
+
+Password:thing
+Rank: 4345
+Hash: 8afc1e
+
+Welcome to the Password database
+1)Search recursively two passwords and pull all the passwords between them
+2)Search recursively by password
+ 3)Search recursively of given file by hash
+ 4)Compare linear and binary search
+ 5)Iterative binary search for password
+ 6)Exit system
+2
+Please input the password you wish to search for.
+these
+
+Password:these
+Rank: 8259
+Hash: bd4c4e
+The value has been found and has gone through 12 number of itterations using Bianary Search
+
+Welcome to the Password database
+1)Search recursively two passwords and pull all the passwords between them
+2)Search recursively by password
+ 3)Search recursively of given file by hash
+ 4)Compare linear and binary search
+ 5)Iterative binary search for password
+ 6)Exit system
+3
+Please input the hash you wish to search for
+
+Password:zxcvbnm123
+Rank: 5252
+Hash: 0062d2
+The value has been found and has gone through 12 Number of itterations
+
+Password:24061988
+Rank: 6565
+Hash: 2f2e03
+The value has been found and has gone through 9 Number of itterations
+
+Password:21021988
+Rank: 8417
+Hash: 78a384
+The value has been found and has gone through 12 Number of itterations
+
+The hash input was not found in this database
+
+Password:kcchiefs
+Rank: 8570
+Hash: 996fa1
+The value has been found and has gone through 11 Number of itterations
+
+The hash input was not found in this database
+
+Welcome to the Password database
+1)Search recursively two passwords and pull all the passwords between them
+2)Search recursively by password
+ 3)Search recursively of given file by hash
+ 4)Compare linear and binary search
+ 5)Iterative binary search for password
+ 6)Exit system
+4
+Please input the password you wish to search for
+Once input is provided the code will use a Bianary function to check for the password then use a itterative function to search for the same password
+Each functions will give a number of itterations which corosponds to how many times calculations were done, fewer itterations better performance
+thierry
+
+Password:thierry
+Rank: 7999
+Hash: 66aad1
+The value has been found and has gone through 11 number of itterations using Bianary Search
+
+Password:thierry
+Rank: 7999
+Hash: 66aad1
+The password was found after 7929 itterations using a linear search
+
+Welcome to the Password database
+1)Search recursively two passwords and pull all the passwords between them
+2)Search recursively by password
+ 3)Search recursively of given file by hash
+ 4)Compare linear and binary search
+ 5)Iterative binary search for password
+ 6)Exit system
+5
+Please input the password you wish to search itterativly for. *Note this will take longer than Bianary search*
+thedoors
+
+Password:thedoors
+Rank: 4113
+Hash: 6f0907
+This password was found after 11 number of itterations
+
+Welcome to the Password database
+1)Search recursively two passwords and pull all the passwords between them
+2)Search recursively by password
+ 3)Search recursively of given file by hash
+ 4)Compare linear and binary search
+ 5)Iterative binary search for password
+ 6)Exit system
+6
+]0;brw020@turing: ~/PF2/HW3[01;32mbrw020@turing[00m:[01;34m~/PF2/HW3[00m$ exit
+exit
+
+Script done on 2023-03-03 22:37:50-0600
