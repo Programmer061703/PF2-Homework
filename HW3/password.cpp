@@ -48,7 +48,7 @@ Hash = "0";
     } 
 
     void Password::print(){
-      cout << "Password:" << getPlaintext()<<endl;
+      cout <<endl<< "Password:" << getPlaintext()<<endl;
       cout << "Rank: "<< getRank()<<endl;
       cout << "Hash: "<< getHash()<<endl;
 

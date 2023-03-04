@@ -67,6 +67,7 @@ int searchBianaryPasswords(int itterations,vector<Password> passwords, int max, 
     
      
     if (min>max){
+        cout <<endl<<"The Password was not found"<<endl;
         return -1; 
     }
     int mid = min + (max - min) / 2; 
@@ -99,7 +100,8 @@ int searchBianaryPasswords(int itterations,vector<Password> passwords, int max, 
 int searchBianaryHashes(int itterations,vector<Password>hash, int max, int min, int search){
 
  
-    if (min>=max){
+    if (min>max){
+        cout <<endl<<"The hash input was not found in this database"<<endl;
         return -1; 
     }
     int mid = min + (max - min) / 2; 
@@ -108,7 +110,7 @@ int searchBianaryHashes(int itterations,vector<Password>hash, int max, int min, 
         
        
         hash[mid].print();  
-         cout << "The value has been found and has gone through "<< itterations << "Number of itterations" <<endl;
+         cout << "The value has been found and has gone through "<< itterations << " Number of itterations" <<endl;
 
         return mid; 
 
@@ -129,6 +131,36 @@ int searchBianaryHashes(int itterations,vector<Password>hash, int max, int min, 
       
 }
 
+int searchPrint(int itterations,vector<Password> passwords, int max, int min, string search1, string search2){
+      int output1;
+      int output2; 
+      int x; 
+     output1 = searchBianaryPasswords(0,passwords,passwords.size()-1,0,search1);
+     output2 = searchBianaryPasswords(0,passwords,passwords.size()-1,0,search2);
+    //when output 1 is < output 2
+     if (output1<output2){
+        
+            while(output1 <= output2){
+            passwords[output1].print();
+            output1 = output1 + 1; 
+        }
+            
+                  
+     }
+     //when output 1 is > output 2
+    else if(output1>output2){
+        while(output2 <= output1){
+            passwords[output2].print();
+            output2 = output2 + 1;
+    }
+    }
+    //when output 1 == output 2
+    else{
+        
+        passwords[output1].print();
+    }
+    return x;
+}
 //Search Itterativly 
 int searchItterative(int itterations, vector<Password> passwords, int max, int min, string search){
 while (min <= max){
@@ -137,7 +169,7 @@ while (min <= max){
     if(search == passwords[mid].getPlaintext() ){
         passwords[mid].print();
 
-        cout <<"This password was found after "<< itterations<<"number of itterations"<<endl; 
+        cout <<"This password was found after "<< itterations<<" number of itterations"<<endl; 
 
         return mid; 
 
@@ -180,7 +212,9 @@ return -1;
 
 
 }
-//int searchItterativePassowrd(int itterations )
+
+
+
 
 //----------------------------------------------
 int main()
@@ -212,9 +246,14 @@ int main()
      
     string Hinput; // Hash input
     string Pinput ; // Password input  
+    string Pinput2; // Used for the searchPrint function 
     switch(selection){
         case(1):
-     
+        cout << "Please input 2 passwords you wish to search, then this will display the passwords and print out the passwords between each of them"<<endl; 
+        cin >> Pinput;
+        cout <<"Please input the second password you wish to search for"<<endl; 
+        cin >> Pinput2; 
+        searchPrint(0,password,password.size()-1,0,Pinput,Pinput2);
 
         break; 
 
@@ -228,8 +267,14 @@ int main()
 
         case(3):
          cout << "Please input the hash you wish to search for"<<endl; 
-        cin >> Hinput; 
-        searchBianaryHashes(0,hash,hash.size()-1,0, stoi(Hinput,0,16) );
+        for(int x =0; x < given_hashes.size();x++){
+        
+            Hinput = given_hashes[x]; 
+
+         searchBianaryHashes(0,hash,hash.size()-1,0, stoi(Hinput,0,16) );
+        }
+
+        
         break;
 
         case(4):
