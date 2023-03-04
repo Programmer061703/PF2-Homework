@@ -74,8 +74,9 @@ int searchBianaryPasswords(int itterations,vector<Password> passwords, int max, 
 
     if (search == passwords[mid].getPlaintext()){
         
-        cout << "The value has been found and has gone through "<< itterations << " number of itterations"<<endl; 
-        passwords[mid].print(); 
+         
+        passwords[mid].print();
+        cout << "The value has been found and has gone through "<< itterations << " number of itterations using Bianary Search"<<endl; 
 
         return mid; 
 
@@ -137,9 +138,10 @@ int searchPrint(int itterations,vector<Password> passwords, int max, int min, st
       int x; 
      output1 = searchBianaryPasswords(0,passwords,passwords.size()-1,0,search1);
      output2 = searchBianaryPasswords(0,passwords,passwords.size()-1,0,search2);
+
     //when output 1 is < output 2
      if (output1<output2){
-        
+        cout<<endl<<"Printing all data between two variables"<<endl;
             while(output1 <= output2){
             passwords[output1].print();
             output1 = output1 + 1; 
@@ -149,6 +151,7 @@ int searchPrint(int itterations,vector<Password> passwords, int max, int min, st
      }
      //when output 1 is > output 2
     else if(output1>output2){
+        cout<<endl<<"Printing all data between two variables"<<endl;
         while(output2 <= output1){
             passwords[output2].print();
             output2 = output2 + 1;
@@ -159,7 +162,7 @@ int searchPrint(int itterations,vector<Password> passwords, int max, int min, st
         
         passwords[output1].print();
     }
-    return x;
+    
 }
 //Search Itterativly 
 int searchItterative(int itterations, vector<Password> passwords, int max, int min, string search){
@@ -197,8 +200,8 @@ int x=0;
 while (x < passwords.size()){
 
     if (passwords[x].getPlaintext()==search){
-        cout << "The password was found after "<<itterations<<" using a linear search"<<endl;
         passwords[x].print(); 
+        cout << "The password was found after "<<itterations<<" itterations using a linear search"<<endl;
         break; 
     }
     x++;
@@ -219,7 +222,7 @@ return -1;
 //----------------------------------------------
 int main()
 {
-    int num_itter = 0;
+    
     int x = 0;
     //vector for hash sorted file
     vector<Password> hash;
@@ -259,7 +262,7 @@ int main()
 
         case(2):
 
-        cout <<"Please input the password you wish to search for. *Note this will be faster than the itterative search*"<<endl; 
+        cout <<"Please input the password you wish to search for."<<endl; 
         cin >> Pinput;
         searchBianaryPasswords(0,password,password.size()-1,0,Pinput);
 
