@@ -14,6 +14,8 @@ public:
     ~Queue();
     
     void insert(const int number);
+
+    
     int remove();
     
 	bool isFull() const;
