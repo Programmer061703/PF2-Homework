@@ -52,6 +52,8 @@
     }
     void Stack::print() const{
         for (int i = 0; i < count; i++){
-            cout << data[i]<<endl; 
+            cout << data[i]<<"\t"; 
+            
         }
+        cout <<endl; 
     }

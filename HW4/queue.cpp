@@ -22,8 +22,15 @@
         return; 
     }
     int Queue::remove(){
+    if(!isEmpty()){
+
+        int x = data.front();
         data.erase(data.begin());
-        count--;  
+        count--; 
+        return x;
+    }   
+    
+    return -1; 
     }
     
 	bool Queue::isFull() const{
@@ -49,7 +56,8 @@
     }
     void Queue::print() const{
         for (int i = 0; i < count; i++){
-            cout << data[i]<<endl; 
+            cout << data[i]<<"\t"; 
         }
+        cout <<endl; 
 
     }
