@@ -9,7 +9,7 @@ using namespace std;
 int main(){
 // Get start time
 clock_t time1=clock();
-int itterations = 100000000; 
+int itterations = 10000000; 
 
 
 //Code starts here
