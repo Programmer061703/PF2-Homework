@@ -9,7 +9,7 @@ using namespace std;
 int main(){
 // Get start time
 clock_t time1=clock();
-
+int itterations = 100000000; 
 
 
 //Code starts here
@@ -17,7 +17,7 @@ srand (time(NULL));
 
 Stack Snumbers;
 int random;
-for (int i = 0; i < 1000; i++){
+for (int i = 0; i < itterations; i++){
  random = rand() % 100 + 1;
   
 
@@ -41,7 +41,7 @@ cout << "Run time: " << run_time << " seconds\n";
 
 Queue Qnumbers;
 
-for (int i = 0; i < 1000; i++){
+for (int i = 0; i < itterations; i++){
  random = rand() % 100 + 1;
   
 
