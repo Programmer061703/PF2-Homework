@@ -1,4 +1,4 @@
-// I need to make a book class Year Title, Author's last name, Author's first name, Genre, Rating
+
 #ifndef BOOK_H
 #define BOOK_H
 #include <iostream>
