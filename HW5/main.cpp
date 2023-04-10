@@ -82,94 +82,133 @@ void writeFile(vector <Book> &books, string filename){
 
 
 // Insertion function that sorting based off year then calls the writeFile to write the vector into a file called insertion.csv
+// It sorts based off get year
 
 void insertionSort(vector <Book> &books, int low, int high){
 
-    for(int i = low +1; i <= high; i++){
-
-        Book temp = books[i];
-        int yVal = temp.getYear();
-
-        int pos = i; 
-
-while((pos > 0) && (books[pos-1].getYear() > yVal)){
-        books[pos].setYear(books[i-1].getYear());
-        books[pos].setTitle(books[i-1].getTitle());
-        books[pos].setAuthorLast(books[i-1].getAuthorLast());
-        books[pos].setAuthorFirst(books[i-1].getAuthorFirst());
-        books[pos].setGenre(books[i-1].getGenre());
-        books[pos].setRating(books[i-1].getRating());
-        pos--;
+    for(int i = low + 1; i < high; i++){  // Start a loop from low+1 to high-1
+        Book temp = books[i];         // Store the i-th element in a temporary variable
+        int j = i - 1;                // Set j as the previous element to i
+        while((j >= 0) && (books[j].getYear() > temp.getYear())){  // Loop until j is greater than or equal to 0 and previous year is greater than current year
+            books[j + 1] = books[j];  // Shift the element to the right
+            j--;                      // Decrement j
+        }
+        books[j + 1] = temp;          // Insert the current element at correct position
     }
-    
-    
-    books[pos] = temp;    
-    }
+
+    writeFile(books, "insertion.csv"); // Write the sorted array to a file
+    cout << "Insertion sort complete" << endl; // Print a message indicating that the sort is complete
+
+
 }
 
 //Selection sort function that sorts based off the first name of the author then calls the writeFile to write the vector into a file called selection.csv
 
 void selectionSort(vector <Book> &books, int low, int high){
-    for(int i = low; i < high; i++){
-        int min = i;
-        for(int j = i + 1; j < high; j++){
-            if(books[j].getAuthorFirst() < books[min].getAuthorFirst()){
-                min = j;
+    for(int i = low; i < high; i++){    // Start a loop from low to high-1
+        int min = i;                // Set the minimum element as the current index i
+        for(int j = i + 1; j < high; j++){  // Start a nested loop from i+1 to high-1
+            if(books[j].getAuthorFirst() < books[min].getAuthorFirst()){  // If author of j-th book comes before author of current minimum book
+                min = j;            // Update the index of minimum element
             }
         }
-        Book temp = books[i];
+        Book temp = books[i];       // Swap the current index i with minimum index
         books[i] = books[min];
         books[min] = temp;
     }
+
    
 }
 
 
+// Quick sort function that sorts based off the last name of the author then calls the writeFile to write the vector into a file called quick.csv
 
-void partition(vector <Book> &books, int low, int high, int &mid){
-    
-    Book pivot = books[low];
 
-    int l = low;
-    int r = high;
 
-    while(l <= r){
-        while((l<r) && (books.at(l).getAuthorLast() < pivot.getAuthorLast()))
-            l++;
-        
-        while((l<r) && (books.at(r).getAuthorLast() >= pivot.getAuthorLast()))
-            r--;
-        
-        
-    // swap data values
-    Book temp = books.at(l);
-    books.at(l) = books.at(r);
-    books.at(r) = temp;
-
-   
-
+int partition(vector <Book> &books, int low, int high){
+    // Choose the pivot element
+    Book pivot = books[high];
+    // Initialize the partition index
+    int i = low - 1;
+    // Iterate through the array from low to high
+    for(int j = low; j < high; j++){
+        // If the current element is less than pivot,
+        // increment the partition index and swap the current element
+        // with the element at the partition index
+        if(books[j].getAuthorLast() < pivot.getAuthorLast()){
+            i++;
+            Book temp = books[i];
+            books[i] = books[j];
+            books[j] = temp;
+        }
     }
-
-    mid = l;
-    books.at(high) = books.at(mid);
-    books.at(mid) = pivot;
+    // Finally, swap the pivot element with the element at the partition index
+    Book temp = books[i + 1];
+    books[i + 1] = books[high];
+    books[high] = temp;
+    // Return the partition index
+    return i + 1;
 }
-
 
 void quickSort(vector <Book> &books, int low, int high){
-    
+    // Base case: If low is greater than or equal to high, the array is already sorted
     if(low < high){
-        int mid = 0;
-        partition(books, low, high, mid);
-        quickSort(books, low, mid - 1);
-        quickSort(books, mid + 1, high);
+        // Find the pivot index by partitioning the array
+        int pivot = partition(books, low, high);
+        // Recursively sort the left and right sub-arrays
+        quickSort(books, low, pivot - 1);
+        quickSort(books, pivot + 1, high);
     }
-    
 }
 
 
+    
+ 
+//Merge sort function that sorts based off the title of the book then calls the writeFile to write the vector into a file called merge.csv
 
+void merge(vector<Book> &books, int left, int right){
+    // Find the number of elements to be sorted
+    int count = right - left + 1;
+    // If there is more than one element, continue sorting
+    if (count > 1){
+        // Divide the array in half and recursively sort each half
+        int mid = (left + right) / 2;
+        merge(books, left, mid);
+        merge(books, mid + 1, right);
+        
+        // Create a temporary array to hold the sorted values
+        Book* copy = new Book[count];
 
+        // Merge the two sorted halves into the temporary array
+        int i = left;
+        int i2 = mid + 1;
+        int k = 0;
+        while (i <= mid && i2 <= right){
+            if (books[i].getTitle() < books[i2].getTitle()){
+                copy[k++] = books[i++];
+            }
+            else{
+                copy[k++] = books[i2++];
+            }
+        }
+        // Copy any remaining elements from the first half
+        while (i <= mid){
+            copy[k++] = books[i++];
+        }
+        // Copy any remaining elements from the second half
+        while (i2 <= right){
+            copy[k++] = books[i2++];
+        }
+
+        // Copy the sorted values back into the original array
+        for (int i = 0; i < count; i++){
+            books[left + i] = copy[i];
+        }
+        
+        // Clean up the temporary array
+        delete[] copy;
+    }
+}
 
 int main(){
 vector <Book> books;
@@ -179,25 +218,43 @@ vector <Book> books;
 
 
 readFile(books);
+clock_t time1=clock();
 
-insertionSort(books, 0, books.size());
-writeFile(books, "insertion.csv");
+insertionSort(books, 0, books.size() - 1);
 
-    cout << "Insertion sort complete" << endl;
-readFile(books);
+clock_t time2=clock();
+double run_time = (time2-time1)/(double)CLOCKS_PER_SEC;
+   cout << "Run time of insertionSort: " << run_time << " seconds\n";
 
-selectionSort(books, 0, books.size());
+    
+
+clock_t time3 = clock();
+selectionSort(books, 0, books.size() - 1);
  writeFile(books, "selection.csv");
+clock_t time4 = clock();
+double run_time2 = (time4 - time3) / (double)CLOCKS_PER_SEC;
+cout << "Run time of selectionSort: " << run_time2 << " seconds\n";
 
-cout << "Selection sort complete" << endl;
+;
 
-readFile(books);
 
+clock_t time5 = clock();
 quickSort(books, 0, books.size() - 1);
 writeFile(books, "quick.csv");
 
-cout << "Quick sort complete" << endl;
-readFile(books);
+clock_t time6 = clock();
+double run_time3 = (time6 - time5) / (double)CLOCKS_PER_SEC;
+cout << "Run time of quickSort: " << run_time3 << " seconds\n";
+
+
+
+clock_t time7 = clock();
+merge(books, 0, books.size() - 1);
+writeFile(books, "merge.csv");
+    
+clock_t time8 = clock();
+double run_time4 = (time8 - time7) / (double)CLOCKS_PER_SEC;
+cout << "Run time of mergeSort: " << run_time4 << " seconds\n";
 
     
     

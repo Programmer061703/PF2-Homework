@@ -1,0 +1,11 @@
+Script started on 2023-04-09 22:52:41-0500
+]0;brw020@turing: ~/HW5[01;32mbrw020@turing[00m:[01;34m~/HW5[00m$ ./main.exe
+Insertion sort complete
+Run time of insertionSort: 2.17606 seconds
+Run time of selectionSort: 2.49216 seconds
+Run time of quickSort: 0.063447 seconds
+Run time of mergeSort: 0.07564 seconds
+]0;brw020@turing: ~/HW5[01;32mbrw020@turing[00m:[01;34m~/HW5[00m$ exit
+exit
+
+Script done on 2023-04-09 22:53:23-0500
