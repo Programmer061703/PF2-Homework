@@ -7,3 +7,7 @@ All code here is written in C++
 *Homework 2* - RestaurantLinked List. Download Code and run, no txt files just a example of linked lists. 
 
 *Homework 3* - Creating a Password data-base that reads in mulpiple files and utalizes recursion to parse through all the information 
+
+*Homework 4* - Comapring the runtimes of stacks and queues
+
+*Homework 5* - Comparing the runtime of 4 different sorting algorithms (Merge, Quicksort, Insertion, and selectionsort)
