@@ -9,7 +9,7 @@ Book::Book(){
     rating = 0;
 }
 
-Book::Book(int year, string title, string authorLast, string authorFirst, string genre, int rating){
+Book::Book(int year, string title, string authorLast, string authorFirst, string genre, float rating){
     this->year = year;
     this->title = title;
     this->authorLast = authorLast;
@@ -18,7 +18,7 @@ Book::Book(int year, string title, string authorLast, string authorFirst, string
     this->rating = rating;
 }
 
-Book::Book(const Book& copy){
+Book::Book(const Book &copy){
     year = copy.year;
     title = copy.title;
     authorLast = copy.authorLast;
@@ -31,27 +31,27 @@ Book::~Book(){
 
 }
 
-void Book::setYear(int year){
+void Book::setYear(const int year){
     this->year = year;
 }
 
-void Book::setTitle(string title){
+void Book::setTitle(const string title){
     this->title = title;
 }
 
-void Book::setAuthorLast(string authorLast){
+void Book::setAuthorLast(const string authorLast){
     this->authorLast = authorLast;
 }
 
-void Book::setAuthorFirst(string authorFirst){
+void Book::setAuthorFirst(const string authorFirst){
     this->authorFirst = authorFirst;
 }
 
-void Book::setGenre(string genre){
+void Book::setGenre(const string genre){
     this->genre = genre;
 }
 
-void Book::setRating(int rating){
+void Book::setRating(const int rating){
     this->rating = rating;
 }       
 
@@ -75,7 +75,7 @@ string Book::getGenre(){
     return genre;
 }
 
-int Book::getRating(){
+float Book::getRating(){
     return rating;
 }
 
