@@ -17,7 +17,7 @@ private:
     int rating;
 public:
     Book();
-    Book(int year, string title, string authorLast, string authorFirst, string genere, int rating);
+    Book(int year, string title, string authorLast, string authorFirst, string genere, float rating);
     Book(const Book& copy);
     ~Book();
 
@@ -33,7 +33,7 @@ public:
     string getAuthorLast();
     string getAuthorFirst();
     string getGenre();
-    int getRating();
+    float  getRating();
     void print();
 };
 
