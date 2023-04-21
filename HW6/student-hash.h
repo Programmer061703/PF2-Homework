@@ -30,7 +30,7 @@ void print();
 
 private:
 int Hash(string full_name);
-int Hash2(int index);
+
 
 int size;
 student_list *table;

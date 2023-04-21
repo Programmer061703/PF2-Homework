@@ -6,6 +6,7 @@
 #define STUDENT_LIST_H
 
 #include "student-node.h"
+
 #include <iostream>
 using namespace std;
 
@@ -22,10 +23,15 @@ public:
 
 //Insert method
 bool insertNode(string full_name, string country, string city, string gender, double gpa);
+//Delete method
 bool deleteNode(string full_name);
+//Update method
 bool updateNodes(string full_name, string country, string city, string gender, double gpa);
+//Search method
 bool searchNodes(string full_name);
+//Print method
 void printNodes();
+//Get head
 student_node *getHead();
 
 private:

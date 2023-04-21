@@ -38,20 +38,20 @@ public:
 
 
 //getters
-string get_full_name();
-string get_country();
-string get_city();
-string get_gender();
-double get_gpa();
-student_node *get_next();
+string getfull_name();
+string getcountry();
+string getcity();
+string getgender();
+double getgpa();
+student_node *getnext();
 
 //setters
-void set_full_name(string full_name);
-void set_country(string country);
-void set_city(string city);
-void set_gender(string gender);
-void set_gpa(double gpa);
-void set_next(student_node *next);
+void setfull_name(string full_name);
+void setcountry(string country);
+void setcity(string city);
+void setgender(string gender);
+void setgpa(double gpa);
+void setnext(student_node *next);
 
 //print method
 
