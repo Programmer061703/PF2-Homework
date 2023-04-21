@@ -11,3 +11,5 @@ All code here is written in C++
 *Homework 4* - Comapring the runtimes of stacks and queues
 
 *Homework 5* - Comparing the runtime of 4 different sorting algorithms (Merge, Quicksort, Insertion, and selectionsort)
+
+*Homework 6* - Creating a Hash Table that reads in a text file into a list of multiple hash tables, then gives the user the ability to edit, lookup, print, and delete data
