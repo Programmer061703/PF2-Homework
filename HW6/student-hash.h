@@ -30,6 +30,7 @@ void print();
 
 private:
 int Hash(string full_name);
+int collisions;
 
 
 int size;

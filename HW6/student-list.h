@@ -22,7 +22,7 @@ public:
     ~student_list();
 
 //Insert method
-bool insertNode(string full_name, string country, string city, string gender, double gpa);
+int insertNode(string full_name, string country, string city, string gender, double gpa);
 //Delete method
 bool deleteNode(string full_name);
 //Update method
@@ -31,6 +31,10 @@ bool updateNodes(string full_name, string country, string city, string gender, d
 bool searchNodes(string full_name);
 //Print method
 void printNodes();
+// Num of collisions
+int numCollisions();
+
+
 //Get head
 student_node *getHead();
 

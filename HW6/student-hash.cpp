@@ -3,6 +3,7 @@
 
 student_hash::student_hash(int size){
     this->size = size;
+    this->collisions = 0;
     table = new student_list[size];
     // for loop that creates a new student_list for each index in the table
     for(int i = 0; i < size; i++){
@@ -31,7 +32,10 @@ student_hash::~student_hash(){
 bool student_hash::insert(string full_name, string country, string city, string gender, double gpa){
 
     int index = Hash(full_name);
-    return table[index].insertNode(full_name,country,city,gender,gpa);
+    //table[index].insertNode(full_name,country,city,gender,gpa);
+    collisions += table[index].insertNode(full_name,country,city,gender,gpa);
+
+    return true;
 
 }
 
@@ -70,6 +74,7 @@ void student_hash::print(){
         table[i].printNodes();
         cout << endl;
     }
+    cout << "Total collisions: " << collisions << endl;
 
 }
 

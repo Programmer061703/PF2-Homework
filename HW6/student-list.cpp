@@ -34,15 +34,18 @@ student_list::~student_list()
 
 //Insert method
 
-bool student_list::insertNode(string full_name, string country, string city, string gender, double gpa){
+int student_list::insertNode(string full_name, string country, string city, string gender, double gpa){
 
 //Find tail node
+int collision = 0;
+
 
 student_node *temp = head;
 student_node *tail = NULL;
 while(temp != NULL)
 {
     tail = temp;
+    collision++;
     temp = temp->getnext();
 
 }
@@ -53,17 +56,15 @@ if(tail != NULL){
     cout<<"Inserting node"<<endl;
 
     tail->setnext(new student_node(full_name,country,city,gender,gpa));
-    return true;
-
-
+   
 }
 
 else{
     cout<<"Inserting head"<<endl;
-    head = new student_node(full_name,country,city,gender,gpa);
-    return true;
+    head = new student_node(full_name,country,city,gender,gpa); 
 
 }
+return collision; 
     
     }
 
@@ -161,5 +162,19 @@ void student_list::printNodes(){
         temp->print();
         temp = temp->getnext();
     }
+
+}
+
+int student_list::numCollisions(){
+
+    int count = 0;
+    student_node *temp = head;
+    while(temp != NULL)
+    {
+        count++;
+        temp = temp->getnext();
+    }
+    return count;
+
 
 }

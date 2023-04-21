@@ -6,6 +6,7 @@
         "span": "cpp",
         "utility": "cpp",
         "ostream": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "xlocale": "cpp"
     }
 }
