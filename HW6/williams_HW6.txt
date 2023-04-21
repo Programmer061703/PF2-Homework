@@ -1,0 +1,1090 @@
+Script started on 2023-04-21 10:44:47-0500
+]0;brw020@turing: ~/PF2/HW6[01;32mbrw020@turing[00m:[01;34m~/PF2/HW6[00m$ exit./main.exeg++ -Wall *.cpp -o main.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd HW5[Kscript williams_HW5.txtg++ -Wall *.cpp -o main.exe
+]0;brw020@turing: ~/PF2/HW6[01;32mbrw020@turing[00m:[01;34m~/PF2/HW6[00m$ g++ -Wall *.cpp -o main.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./main.exeg++ -Wall *.cpp -o main.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17P./main.exe
+Enter the size of the hash table: 100
+Enter the name of the file: student-dataset.txt
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting node
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting node
+Inserting node
+Inserting head
+Inserting head
+Inserting node
+Inserting node
+Inserting head
+Inserting head
+Inserting head
+Inserting node
+Inserting head
+Inserting head
+Inserting node
+Inserting head
+Inserting head
+Inserting head
+Inserting node
+Inserting node
+Inserting head
+Inserting node
+Inserting head
+Inserting node
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting node
+Inserting head
+Inserting head
+Inserting node
+Inserting head
+Inserting head
+Inserting head
+Inserting head
+Inserting node
+Inserting head
+Inserting head
+Inserting node
+Inserting head
+Inserting head
+Inserting node
+Inserting head
+Inserting node
+Inserting head
+Inserting head
+Inserting node
+Inserting head
+Inserting node
+Inserting node
+Inserting head
+Inserting node
+Inserting node
+Inserting node
+Inserting node
+Inserting node
+Inserting node
+Inserting node
+Inserting node
+Inserting node
+Inserting node
+Inserting node
+Inserting head
+Inserting node
+Inserting head
+Inserting node
+Inserting head
+Inserting node
+Inserting node
+Inserting node
+Inserting node
+Inserting head
+Inserting node
+1. Insert
+2. Delete
+3. Update
+4. Search
+5. Print
+6. Exit
+5
+Index 0:
+Full Name: Luis Rodriguez, Country: Spain, City: Madrid, Gender: M, GPA: 3.5
+
+Index 1:
+
+Index 2:
+Full Name: Lee Dong, Country: Philippines, City: Manila, Gender: F, GPA: 3.9
+
+Index 3:
+Full Name: Anna Kim, Country: South Korea, City: Busan, Gender: F, GPA: 3.3
+
+Index 4:
+
+Index 5:
+
+Index 6:
+
+Index 7:
+
+Index 8:
+Full Name: Leila Bakir, Country: Morocco, City: Casablanca, Gender: F, GPA: 3.3
+Full Name: Ling Chen, Country: China, City: Shanghai, Gender: F, GPA: 3.9
+
+Index 9:
+Full Name: David Kim, Country: South Korea, City: Seoul, Gender: M, GPA: 3.7
+
+Index 10:
+
+Index 11:
+
+Index 12:
+Full Name: Abdallah Khattab, Country: Egypt, City: Mansoura, Gender: M, GPA: 3.3
+Full Name: Andrei Kuznetsov, Country: Russia, City: Yekaterinburg, Gender: M, GPA: 3.4
+
+Index 13:
+Full Name: Preston Suarez, Country: Japan, City: Tokyo, Gender: M, GPA: 3.8
+Full Name: Juan Garcia, Country: Mexico, City: Mexico City, Gender: M, GPA: 3.7
+
+Index 14:
+Full Name: Ahmed Abdelrahman, Country: Egypt, City: Giza, Gender: M, GPA: 3.6
+
+Index 15:
+Full Name: Muhammad Abbas, Country: Pakistan, City: Karachi, Gender: M, GPA: 3.7
+
+Index 16:
+Full Name: Ali Hassan, Country: Pakistan, City: Lahore, Gender: M, GPA: 3.2
+Full Name: Hassan Ali, Country: Pakistan, City: Islamabad, Gender: M, GPA: 3.2
+
+Index 17:
+Full Name: Angela Harding, Country: United States of America, City: Manteca, Gender: F, GPA: 3.1
+
+Index 18:
+Full Name: Brandon Lee, Country: United States of America, City: Los Angeles, Gender: M, GPA: 3.9
+
+Index 19:
+Full Name: Dakota Blanco, Country: United States of America, City: Oakland, Gender: F, GPA: 3.9
+
+Index 20:
+
+Index 21:
+Full Name: David Weber, Country: China, City: Peking, Gender: M, GPA: 3.9
+
+Index 22:
+Full Name: Ahmed Elsayed, Country: Egypt, City: Alexandria, Gender: M, GPA: 3.6
+Full Name: Sophia Lee, Country: South Korea, City: Seoul, Gender: F, GPA: 3.7
+
+Index 23:
+Full Name: Yuna Lee, Country: South Korea, City: Incheon, Gender: F, GPA: 3.6
+
+Index 24:
+Full Name: David Pulc, Country: Canada, City: Toronto, Gender: M, GPA: 3.9
+Full Name: Esra Ates, Country: Turkey, City: Ankara, Gender: F, GPA: 3.2
+Full Name: Alessia Bianchi, Country: Italy, City: Florence, Gender: F, GPA: 3.7
+
+Index 25:
+
+Index 26:
+Full Name: Rachel Jambor, Country: United States of America, City: Chicago, Gender: F, GPA: 3.6
+Full Name: Maya Patel, Country: India, City: New Delhi, Gender: F, GPA: 3.5
+
+Index 27:
+
+Index 28:
+
+Index 29:
+
+Index 30:
+Full Name: Kira Sato, Country: Japan, City: Tokyo, Gender: F, GPA: 3.8
+
+Index 31:
+Full Name: Edgar Sanchez, Country: Mexico, City: Tijuana, Gender: M, GPA: 3.7
+
+Index 32:
+Full Name: Lucia Costa, Country: Brazil, City: Sao Paulo, Gender: F, GPA: 3.9
+
+Index 33:
+Full Name: Ericka Arreola, Country: Mexico, City: Mexico, Gender: F, GPA: 3.1
+
+Index 34:
+Full Name: Joey Abreu, Country: China, City: Shenyang, Gender: M, GPA: 3.7
+
+Index 35:
+Full Name: Sasha Jansen, Country: United States of America, City: Chicago, Gender: F, GPA: 1.7
+
+Index 36:
+
+Index 37:
+Full Name: Sara Gomez, Country: Spain, City: Barcelona, Gender: F, GPA: 3.2
+Full Name: Ying Liu, Country: China, City: Beijing, Gender: F, GPA: 3.9
+
+Index 38:
+Full Name: Rojesh Her, Country: Japan, City: Tokyo, Gender: M, GPA: 3.8
+
+Index 39:
+
+Index 40:
+Full Name: Meggan Smith, Country: United States of America, City: Los Angeles, Gender: F, GPA: 2.9
+
+Index 41:
+Full Name: Elena Ivanova, Country: Russia, City: Saint Petersburg, Gender: F, GPA: 3.7
+
+Index 42:
+
+Index 43:
+Full Name: Samantha Hicks, Country: United States of America, City: Santa Barbara, Gender: F, GPA: 3.7
+
+Index 44:
+Full Name: Jonas Hansen, Country: Denmark, City: Copenhagen, Gender: M, GPA: 3.8
+Full Name: Sarah Smith, Country: Canada, City: Toronto, Gender: F, GPA: 3.8
+
+Index 45:
+Full Name: Natalie Wong, Country: Hong Kong, City: Hong Kong, Gender: F, GPA: 3.6
+Full Name: Fatima AlMansouri, Country: United Arab Emirates, City: Abu Dhabi, Gender: F, GPA: 3.7
+
+Index 46:
+Full Name: Adrien Martin, Country: France, City: Paris, Gender: M, GPA: 3.9
+
+Index 47:
+Full Name: Maria Fernandez, Country: Mexico, City: Mexico City, Gender: F, GPA: 3.7
+Full Name: Pavel Novak, Country: Czech Republic, City: Prague, Gender: M, GPA: 3.6
+
+Index 48:
+
+Index 49:
+Full Name: Maria Hernandez, Country: Mexico, City: Guadalajara, Gender: F, GPA: 3.5
+Full Name: Maria Hernandez, Country: Mexico, City: Guadalajara, Gender: F, GPA: 3.4
+
+Index 50:
+Full Name: Maja Nicholson, Country: United States of America, City: Dallas, Gender: F, GPA: 3.4
+Full Name: Karla Hernandez, Country: Mexico, City: Guadalajara, Gender: F, GPA: 3.7
+
+Index 51:
+Full Name: Pablo Fernandez, Country: Spain, City: Valencia, Gender: M, GPA: 3.6
+Full Name: Emma Johnson, Country: United States, City: New York, Gender: F, GPA: 3.8
+Full Name: Anna Kowalski, Country: Poland, City: Warsaw, Gender: F, GPA: 3.8
+
+Index 52:
+Full Name: Emma Wilson, Country: United Kingdom, City: London, Gender: F, GPA: 3.8
+Full Name: Juan Lopez, Country: Colombia, City: Bogota, Gender: M, GPA: 3.7
+
+Index 53:
+
+Index 54:
+Full Name: Dakota Wirth, Country: United States of America, City: Sacramento, Gender: F, GPA: 3.4
+Full Name: Taro Nakamura, Country: Japan, City: Osaka, Gender: M, GPA: 3.9
+Full Name: Alina Petrova, Country: Russia, City: Moscow, Gender: F, GPA: 3.7
+Full Name: Maria Santos, Country: Portugal, City: Lisbon, Gender: F, GPA: 3.5
+
+Index 55:
+Full Name: Sila Nguyen, Country: China, City: Hebi, Gender: M, GPA: 2.8
+Full Name: Reilly Wagar, Country: United States of America, City: Modesto, Gender: F, GPA: 3.4
+Full Name: Emre Yilmaz, Country: Turkey, City: Istanbul, Gender: M, GPA: 3.5
+Full Name: Aya Hashimoto, Country: Japan, City: Kyoto, Gender: F, GPA: 3.9
+
+Index 56:
+Full Name: Paulo Silva, Country: Brazil, City: Rio de Janeiro, Gender: M, GPA: 3.5
+
+Index 57:
+Full Name: Brandon Barbour, Country: United States of America, City: South Hill, Gender: M, GPA: 3.9
+Full Name: Ivan Ivanov, Country: Bulgaria, City: Sofia, Gender: M, GPA: 3.6
+Full Name: Isabella Rossi, Country: Italy, City: Rome, Gender: F, GPA: 3.8
+
+Index 58:
+Full Name: Kyle Luckey, Country: United States of America, City: Moreno Valley, Gender: M, GPA: 3.7
+Full Name: Victoria Ibarra, Country: Dominican Republic, City: Santo Domingo, Gender: F, GPA: 3.4
+Full Name: Marco Rossi, Country: Italy, City: Rome, Gender: M, GPA: 3.8
+Full Name: Mohammed Abdelaziz, Country: Egypt, City: Cairo, Gender: M, GPA: 3.6
+
+Index 59:
+Full Name: Alexei Ivanov, Country: Russia, City: Moscow, Gender: M, GPA: 3.9
+
+Index 60:
+Full Name: Juan Ramirez, Country: Colombia, City: BogotÃ¡, Gender: M, GPA: 3.9
+
+Index 61:
+
+Index 62:
+Full Name: Lauren Klocker, Country: United States of America, City: Los Angeles, Gender: F, GPA: 2.3
+Full Name: Nour Alsharif, Country: Jordan, City: Amman, Gender: F, GPA: 3.5
+Full Name: Sophie Dubois, Country: France, City: Paris, Gender: F, GPA: 3.8
+
+Index 63:
+Full Name: Thiago Oliveira, Country: Brazil, City: SÃ£o Paulo, Gender: M, GPA: 3.3
+
+Index 64:
+
+Index 65:
+Full Name: Sophie Smith, Country: United Kingdom, City: Manchester, Gender: F, GPA: 3.4
+Full Name: Yuji Nakamura, Country: Japan, City: Osaka, Gender: M, GPA: 3.9
+Full Name: Hiroshi Sato, Country: Japan, City: Tokyo, Gender: M, GPA: 3.8
+
+Index 66:
+Full Name: Joshua Lonaker, Country: United States of America, City: Santa Clarita, Gender: M, GPA: 2.9
+Full Name: Alexander Sherman, Country: United States of America, City: Omaha, Gender: M, GPA: 3.8
+
+Index 67:
+Full Name: John Wilson, Country: United States, City: New York City, Gender: M, GPA: 3.4
+Full Name: Khaled AlSaad, Country: Saudi Arabia, City: Riyadh, Gender: M, GPA: 3.9
+
+Index 68:
+
+Index 69:
+Full Name: Sofia Torres, Country: Argentina, City: Buenos Aires, Gender: F, GPA: 3.5
+
+Index 70:
+Full Name: Ivan Petrov, Country: Bulgaria, City: Plovdiv, Gender: M, GPA: 3.4
+
+Index 71:
+
+Index 72:
+Full Name: Alexei Petrov, Country: Russia, City: Novosibirsk, Gender: M, GPA: 3.4
+
+Index 73:
+
+Index 74:
+
+Index 75:
+
+Index 76:
+Full Name: Kolbi Strunk, Country: United States of America, City: Mission Viejo, Gender: M, GPA: 3.2
+
+Index 77:
+Full Name: Brittany Sath, Country: Japan, City: Tokyo, Gender: F, GPA: 4
+Full Name: Oliver Brown, Country: United Kingdom, City: Edinburgh, Gender: M, GPA: 3.5
+Full Name: Maria Rodriguez, Country: Spain, City: Madrid, Gender: F, GPA: 3.9
+
+Index 78:
+
+Index 79:
+
+Index 80:
+
+Index 81:
+Full Name: Rochelle Johnson, Country: United States of America, City: Indianapolis, Gender: F, GPA: 3.4
+
+Index 82:
+
+Index 83:
+
+Index 84:
+
+Index 85:
+
+Index 86:
+Full Name: Hana Lee, Country: South Korea, City: Busan, Gender: F, GPA: 3.5
+
+Index 87:
+
+Index 88:
+
+Index 89:
+Full Name: Ahmed Ali, Country: Egypt, City: Alexandria, Gender: M, GPA: 3.3
+
+Index 90:
+
+Index 91:
+
+Index 92:
+Full Name: Dmitry Ivanov, Country: Russia, City: St. Petersburg, Gender: M, GPA: 3.6
+Full Name: Lee Chen, Country: China, City: Shanghai, Gender: F, GPA: 3.6
+
+Index 93:
+
+Index 94:
+Full Name: Natasha Yarusso, Country: United States of America, City: Castro Valley, Gender: F, GPA: 3.3
+
+Index 95:
+
+Index 96:
+Full Name: Aisha Ali, Country: United Arab Emirates, City: Dubai, Gender: F, GPA: 3.5
+
+Index 97:
+Full Name: Ahmed Khan, Country: Pakistan, City: Karachi, Gender: M, GPA: 3.4
+Full Name: Dmitry Popov, Country: Russia, City: Kazan, Gender: M, GPA: 3.4
+
+Index 98:
+
+Index 99:
+Full Name: Aleksandr Smirnov, Country: Russia, City: Moscow, Gender: M, GPA: 3.6
+
+Total collisions: 53
+1. Insert
+2. Delete
+3. Update
+4. Search
+5. Print
+6. Exit
+3
+Enter the name of the student: 
+Blake Williams
+Enter the country of the student: 
+Ameria ca
+Enter the city of the student: 
+Rudy    ALma
+Enter the gender of the student: 
+Male
+Enter the gpa of the student: 
+3.5
+Inserting node
+1. Insert
+2. Delete
+3. Update
+4. Search
+5. Print
+6. Exit
+5
+Index 0:
+Full Name: Luis Rodriguez, Country: Spain, City: Madrid, Gender: M, GPA: 3.5
+
+Index 1:
+
+Index 2:
+Full Name: Lee Dong, Country: Philippines, City: Manila, Gender: F, GPA: 3.9
+
+Index 3:
+Full Name: Anna Kim, Country: South Korea, City: Busan, Gender: F, GPA: 3.3
+
+Index 4:
+
+Index 5:
+
+Index 6:
+
+Index 7:
+
+Index 8:
+Full Name: Leila Bakir, Country: Morocco, City: Casablanca, Gender: F, GPA: 3.3
+Full Name: Ling Chen, Country: China, City: Shanghai, Gender: F, GPA: 3.9
+
+Index 9:
+Full Name: David Kim, Country: South Korea, City: Seoul, Gender: M, GPA: 3.7
+
+Index 10:
+
+Index 11:
+
+Index 12:
+Full Name: Abdallah Khattab, Country: Egypt, City: Mansoura, Gender: M, GPA: 3.3
+Full Name: Andrei Kuznetsov, Country: Russia, City: Yekaterinburg, Gender: M, GPA: 3.4
+
+Index 13:
+Full Name: Preston Suarez, Country: Japan, City: Tokyo, Gender: M, GPA: 3.8
+Full Name: Juan Garcia, Country: Mexico, City: Mexico City, Gender: M, GPA: 3.7
+
+Index 14:
+Full Name: Ahmed Abdelrahman, Country: Egypt, City: Giza, Gender: M, GPA: 3.6
+
+Index 15:
+Full Name: Muhammad Abbas, Country: Pakistan, City: Karachi, Gender: M, GPA: 3.7
+
+Index 16:
+Full Name: Ali Hassan, Country: Pakistan, City: Lahore, Gender: M, GPA: 3.2
+Full Name: Hassan Ali, Country: Pakistan, City: Islamabad, Gender: M, GPA: 3.2
+
+Index 17:
+Full Name: Angela Harding, Country: United States of America, City: Manteca, Gender: F, GPA: 3.1
+
+Index 18:
+Full Name: Brandon Lee, Country: United States of America, City: Los Angeles, Gender: M, GPA: 3.9
+
+Index 19:
+Full Name: Dakota Blanco, Country: United States of America, City: Oakland, Gender: F, GPA: 3.9
+
+Index 20:
+
+Index 21:
+Full Name: David Weber, Country: China, City: Peking, Gender: M, GPA: 3.9
+
+Index 22:
+Full Name: Ahmed Elsayed, Country: Egypt, City: Alexandria, Gender: M, GPA: 3.6
+Full Name: Sophia Lee, Country: South Korea, City: Seoul, Gender: F, GPA: 3.7
+
+Index 23:
+Full Name: Yuna Lee, Country: South Korea, City: Incheon, Gender: F, GPA: 3.6
+
+Index 24:
+Full Name: David Pulc, Country: Canada, City: Toronto, Gender: M, GPA: 3.9
+Full Name: Esra Ates, Country: Turkey, City: Ankara, Gender: F, GPA: 3.2
+Full Name: Alessia Bianchi, Country: Italy, City: Florence, Gender: F, GPA: 3.7
+
+Index 25:
+
+Index 26:
+Full Name: Rachel Jambor, Country: United States of America, City: Chicago, Gender: F, GPA: 3.6
+Full Name: Maya Patel, Country: India, City: New Delhi, Gender: F, GPA: 3.5
+
+Index 27:
+
+Index 28:
+
+Index 29:
+
+Index 30:
+Full Name: Kira Sato, Country: Japan, City: Tokyo, Gender: F, GPA: 3.8
+
+Index 31:
+Full Name: Edgar Sanchez, Country: Mexico, City: Tijuana, Gender: M, GPA: 3.7
+
+Index 32:
+Full Name: Lucia Costa, Country: Brazil, City: Sao Paulo, Gender: F, GPA: 3.9
+
+Index 33:
+Full Name: Ericka Arreola, Country: Mexico, City: Mexico, Gender: F, GPA: 3.1
+
+Index 34:
+Full Name: Joey Abreu, Country: China, City: Shenyang, Gender: M, GPA: 3.7
+
+Index 35:
+Full Name: Sasha Jansen, Country: United States of America, City: Chicago, Gender: F, GPA: 1.7
+
+Index 36:
+
+Index 37:
+Full Name: Sara Gomez, Country: Spain, City: Barcelona, Gender: F, GPA: 3.2
+Full Name: Ying Liu, Country: China, City: Beijing, Gender: F, GPA: 3.9
+
+Index 38:
+Full Name: Rojesh Her, Country: Japan, City: Tokyo, Gender: M, GPA: 3.8
+
+Index 39:
+
+Index 40:
+Full Name: Meggan Smith, Country: United States of America, City: Los Angeles, Gender: F, GPA: 2.9
+
+Index 41:
+Full Name: Elena Ivanova, Country: Russia, City: Saint Petersburg, Gender: F, GPA: 3.7
+
+Index 42:
+
+Index 43:
+Full Name: Samantha Hicks, Country: United States of America, City: Santa Barbara, Gender: F, GPA: 3.7
+
+Index 44:
+Full Name: Jonas Hansen, Country: Denmark, City: Copenhagen, Gender: M, GPA: 3.8
+Full Name: Sarah Smith, Country: Canada, City: Toronto, Gender: F, GPA: 3.8
+
+Index 45:
+Full Name: Natalie Wong, Country: Hong Kong, City: Hong Kong, Gender: F, GPA: 3.6
+Full Name: Fatima AlMansouri, Country: United Arab Emirates, City: Abu Dhabi, Gender: F, GPA: 3.7
+Full Name: Blake Williams, Country: America, City: ALma, Gender: Male, GPA: 3.5
+
+Index 46:
+Full Name: Adrien Martin, Country: France, City: Paris, Gender: M, GPA: 3.9
+
+Index 47:
+Full Name: Maria Fernandez, Country: Mexico, City: Mexico City, Gender: F, GPA: 3.7
+Full Name: Pavel Novak, Country: Czech Republic, City: Prague, Gender: M, GPA: 3.6
+
+Index 48:
+
+Index 49:
+Full Name: Maria Hernandez, Country: Mexico, City: Guadalajara, Gender: F, GPA: 3.5
+Full Name: Maria Hernandez, Country: Mexico, City: Guadalajara, Gender: F, GPA: 3.4
+
+Index 50:
+Full Name: Maja Nicholson, Country: United States of America, City: Dallas, Gender: F, GPA: 3.4
+Full Name: Karla Hernandez, Country: Mexico, City: Guadalajara, Gender: F, GPA: 3.7
+
+Index 51:
+Full Name: Pablo Fernandez, Country: Spain, City: Valencia, Gender: M, GPA: 3.6
+Full Name: Emma Johnson, Country: United States, City: New York, Gender: F, GPA: 3.8
+Full Name: Anna Kowalski, Country: Poland, City: Warsaw, Gender: F, GPA: 3.8
+
+Index 52:
+Full Name: Emma Wilson, Country: United Kingdom, City: London, Gender: F, GPA: 3.8
+Full Name: Juan Lopez, Country: Colombia, City: Bogota, Gender: M, GPA: 3.7
+
+Index 53:
+
+Index 54:
+Full Name: Dakota Wirth, Country: United States of America, City: Sacramento, Gender: F, GPA: 3.4
+Full Name: Taro Nakamura, Country: Japan, City: Osaka, Gender: M, GPA: 3.9
+Full Name: Alina Petrova, Country: Russia, City: Moscow, Gender: F, GPA: 3.7
+Full Name: Maria Santos, Country: Portugal, City: Lisbon, Gender: F, GPA: 3.5
+
+Index 55:
+Full Name: Sila Nguyen, Country: China, City: Hebi, Gender: M, GPA: 2.8
+Full Name: Reilly Wagar, Country: United States of America, City: Modesto, Gender: F, GPA: 3.4
+Full Name: Emre Yilmaz, Country: Turkey, City: Istanbul, Gender: M, GPA: 3.5
+Full Name: Aya Hashimoto, Country: Japan, City: Kyoto, Gender: F, GPA: 3.9
+
+Index 56:
+Full Name: Paulo Silva, Country: Brazil, City: Rio de Janeiro, Gender: M, GPA: 3.5
+
+Index 57:
+Full Name: Brandon Barbour, Country: United States of America, City: South Hill, Gender: M, GPA: 3.9
+Full Name: Ivan Ivanov, Country: Bulgaria, City: Sofia, Gender: M, GPA: 3.6
+Full Name: Isabella Rossi, Country: Italy, City: Rome, Gender: F, GPA: 3.8
+
+Index 58:
+Full Name: Kyle Luckey, Country: United States of America, City: Moreno Valley, Gender: M, GPA: 3.7
+Full Name: Victoria Ibarra, Country: Dominican Republic, City: Santo Domingo, Gender: F, GPA: 3.4
+Full Name: Marco Rossi, Country: Italy, City: Rome, Gender: M, GPA: 3.8
+Full Name: Mohammed Abdelaziz, Country: Egypt, City: Cairo, Gender: M, GPA: 3.6
+
+Index 59:
+Full Name: Alexei Ivanov, Country: Russia, City: Moscow, Gender: M, GPA: 3.9
+
+Index 60:
+Full Name: Juan Ramirez, Country: Colombia, City: BogotÃ¡, Gender: M, GPA: 3.9
+
+Index 61:
+
+Index 62:
+Full Name: Lauren Klocker, Country: United States of America, City: Los Angeles, Gender: F, GPA: 2.3
+Full Name: Nour Alsharif, Country: Jordan, City: Amman, Gender: F, GPA: 3.5
+Full Name: Sophie Dubois, Country: France, City: Paris, Gender: F, GPA: 3.8
+
+Index 63:
+Full Name: Thiago Oliveira, Country: Brazil, City: SÃ£o Paulo, Gender: M, GPA: 3.3
+
+Index 64:
+
+Index 65:
+Full Name: Sophie Smith, Country: United Kingdom, City: Manchester, Gender: F, GPA: 3.4
+Full Name: Yuji Nakamura, Country: Japan, City: Osaka, Gender: M, GPA: 3.9
+Full Name: Hiroshi Sato, Country: Japan, City: Tokyo, Gender: M, GPA: 3.8
+
+Index 66:
+Full Name: Joshua Lonaker, Country: United States of America, City: Santa Clarita, Gender: M, GPA: 2.9
+Full Name: Alexander Sherman, Country: United States of America, City: Omaha, Gender: M, GPA: 3.8
+
+Index 67:
+Full Name: John Wilson, Country: United States, City: New York City, Gender: M, GPA: 3.4
+Full Name: Khaled AlSaad, Country: Saudi Arabia, City: Riyadh, Gender: M, GPA: 3.9
+
+Index 68:
+
+Index 69:
+Full Name: Sofia Torres, Country: Argentina, City: Buenos Aires, Gender: F, GPA: 3.5
+
+Index 70:
+Full Name: Ivan Petrov, Country: Bulgaria, City: Plovdiv, Gender: M, GPA: 3.4
+
+Index 71:
+
+Index 72:
+Full Name: Alexei Petrov, Country: Russia, City: Novosibirsk, Gender: M, GPA: 3.4
+
+Index 73:
+
+Index 74:
+
+Index 75:
+
+Index 76:
+Full Name: Kolbi Strunk, Country: United States of America, City: Mission Viejo, Gender: M, GPA: 3.2
+
+Index 77:
+Full Name: Brittany Sath, Country: Japan, City: Tokyo, Gender: F, GPA: 4
+Full Name: Oliver Brown, Country: United Kingdom, City: Edinburgh, Gender: M, GPA: 3.5
+Full Name: Maria Rodriguez, Country: Spain, City: Madrid, Gender: F, GPA: 3.9
+
+Index 78:
+
+Index 79:
+
+Index 80:
+
+Index 81:
+Full Name: Rochelle Johnson, Country: United States of America, City: Indianapolis, Gender: F, GPA: 3.4
+
+Index 82:
+
+Index 83:
+
+Index 84:
+
+Index 85:
+
+Index 86:
+Full Name: Hana Lee, Country: South Korea, City: Busan, Gender: F, GPA: 3.5
+
+Index 87:
+
+Index 88:
+
+Index 89:
+Full Name: Ahmed Ali, Country: Egypt, City: Alexandria, Gender: M, GPA: 3.3
+
+Index 90:
+
+Index 91:
+
+Index 92:
+Full Name: Dmitry Ivanov, Country: Russia, City: St. Petersburg, Gender: M, GPA: 3.6
+Full Name: Lee Chen, Country: China, City: Shanghai, Gender: F, GPA: 3.6
+
+Index 93:
+
+Index 94:
+Full Name: Natasha Yarusso, Country: United States of America, City: Castro Valley, Gender: F, GPA: 3.3
+
+Index 95:
+
+Index 96:
+Full Name: Aisha Ali, Country: United Arab Emirates, City: Dubai, Gender: F, GPA: 3.5
+
+Index 97:
+Full Name: Ahmed Khan, Country: Pakistan, City: Karachi, Gender: M, GPA: 3.4
+Full Name: Dmitry Popov, Country: Russia, City: Kazan, Gender: M, GPA: 3.4
+
+Index 98:
+
+Index 99:
+Full Name: Aleksandr Smirnov, Country: Russia, City: Moscow, Gender: M, GPA: 3.6
+
+Total collisions: 53
+1. Insert
+2. Delete
+3. Update
+4. Search
+5. Print
+6. Exit
+4
+Enter the name of the student: 
+Blake Williams
+Found node
+Full Name: Blake Williams, Country: America, City: ALma, Gender: Male, GPA: 3.5
+1. Insert
+2. Delete
+3. Update
+4. Search
+5. Print
+6. Exit
+2
+Enter the name of the student: 
+Blake Williams
+Deleting node
+1. Insert
+2. Delete
+3. Update
+4. Search
+5. Print
+6. Exit
+5
+Index 0:
+Full Name: Luis Rodriguez, Country: Spain, City: Madrid, Gender: M, GPA: 3.5
+
+Index 1:
+
+Index 2:
+Full Name: Lee Dong, Country: Philippines, City: Manila, Gender: F, GPA: 3.9
+
+Index 3:
+Full Name: Anna Kim, Country: South Korea, City: Busan, Gender: F, GPA: 3.3
+
+Index 4:
+
+Index 5:
+
+Index 6:
+
+Index 7:
+
+Index 8:
+Full Name: Leila Bakir, Country: Morocco, City: Casablanca, Gender: F, GPA: 3.3
+Full Name: Ling Chen, Country: China, City: Shanghai, Gender: F, GPA: 3.9
+
+Index 9:
+Full Name: David Kim, Country: South Korea, City: Seoul, Gender: M, GPA: 3.7
+
+Index 10:
+
+Index 11:
+
+Index 12:
+Full Name: Abdallah Khattab, Country: Egypt, City: Mansoura, Gender: M, GPA: 3.3
+Full Name: Andrei Kuznetsov, Country: Russia, City: Yekaterinburg, Gender: M, GPA: 3.4
+
+Index 13:
+Full Name: Preston Suarez, Country: Japan, City: Tokyo, Gender: M, GPA: 3.8
+Full Name: Juan Garcia, Country: Mexico, City: Mexico City, Gender: M, GPA: 3.7
+
+Index 14:
+Full Name: Ahmed Abdelrahman, Country: Egypt, City: Giza, Gender: M, GPA: 3.6
+
+Index 15:
+Full Name: Muhammad Abbas, Country: Pakistan, City: Karachi, Gender: M, GPA: 3.7
+
+Index 16:
+Full Name: Ali Hassan, Country: Pakistan, City: Lahore, Gender: M, GPA: 3.2
+Full Name: Hassan Ali, Country: Pakistan, City: Islamabad, Gender: M, GPA: 3.2
+
+Index 17:
+Full Name: Angela Harding, Country: United States of America, City: Manteca, Gender: F, GPA: 3.1
+
+Index 18:
+Full Name: Brandon Lee, Country: United States of America, City: Los Angeles, Gender: M, GPA: 3.9
+
+Index 19:
+Full Name: Dakota Blanco, Country: United States of America, City: Oakland, Gender: F, GPA: 3.9
+
+Index 20:
+
+Index 21:
+Full Name: David Weber, Country: China, City: Peking, Gender: M, GPA: 3.9
+
+Index 22:
+Full Name: Ahmed Elsayed, Country: Egypt, City: Alexandria, Gender: M, GPA: 3.6
+Full Name: Sophia Lee, Country: South Korea, City: Seoul, Gender: F, GPA: 3.7
+
+Index 23:
+Full Name: Yuna Lee, Country: South Korea, City: Incheon, Gender: F, GPA: 3.6
+
+Index 24:
+Full Name: David Pulc, Country: Canada, City: Toronto, Gender: M, GPA: 3.9
+Full Name: Esra Ates, Country: Turkey, City: Ankara, Gender: F, GPA: 3.2
+Full Name: Alessia Bianchi, Country: Italy, City: Florence, Gender: F, GPA: 3.7
+
+Index 25:
+
+Index 26:
+Full Name: Rachel Jambor, Country: United States of America, City: Chicago, Gender: F, GPA: 3.6
+Full Name: Maya Patel, Country: India, City: New Delhi, Gender: F, GPA: 3.5
+
+Index 27:
+
+Index 28:
+
+Index 29:
+
+Index 30:
+Full Name: Kira Sato, Country: Japan, City: Tokyo, Gender: F, GPA: 3.8
+
+Index 31:
+Full Name: Edgar Sanchez, Country: Mexico, City: Tijuana, Gender: M, GPA: 3.7
+
+Index 32:
+Full Name: Lucia Costa, Country: Brazil, City: Sao Paulo, Gender: F, GPA: 3.9
+
+Index 33:
+Full Name: Ericka Arreola, Country: Mexico, City: Mexico, Gender: F, GPA: 3.1
+
+Index 34:
+Full Name: Joey Abreu, Country: China, City: Shenyang, Gender: M, GPA: 3.7
+
+Index 35:
+Full Name: Sasha Jansen, Country: United States of America, City: Chicago, Gender: F, GPA: 1.7
+
+Index 36:
+
+Index 37:
+Full Name: Sara Gomez, Country: Spain, City: Barcelona, Gender: F, GPA: 3.2
+Full Name: Ying Liu, Country: China, City: Beijing, Gender: F, GPA: 3.9
+
+Index 38:
+Full Name: Rojesh Her, Country: Japan, City: Tokyo, Gender: M, GPA: 3.8
+
+Index 39:
+
+Index 40:
+Full Name: Meggan Smith, Country: United States of America, City: Los Angeles, Gender: F, GPA: 2.9
+
+Index 41:
+Full Name: Elena Ivanova, Country: Russia, City: Saint Petersburg, Gender: F, GPA: 3.7
+
+Index 42:
+
+Index 43:
+Full Name: Samantha Hicks, Country: United States of America, City: Santa Barbara, Gender: F, GPA: 3.7
+
+Index 44:
+Full Name: Jonas Hansen, Country: Denmark, City: Copenhagen, Gender: M, GPA: 3.8
+Full Name: Sarah Smith, Country: Canada, City: Toronto, Gender: F, GPA: 3.8
+
+Index 45:
+Full Name: Natalie Wong, Country: Hong Kong, City: Hong Kong, Gender: F, GPA: 3.6
+Full Name: Fatima AlMansouri, Country: United Arab Emirates, City: Abu Dhabi, Gender: F, GPA: 3.7
+
+Index 46:
+Full Name: Adrien Martin, Country: France, City: Paris, Gender: M, GPA: 3.9
+
+Index 47:
+Full Name: Maria Fernandez, Country: Mexico, City: Mexico City, Gender: F, GPA: 3.7
+Full Name: Pavel Novak, Country: Czech Republic, City: Prague, Gender: M, GPA: 3.6
+
+Index 48:
+
+Index 49:
+Full Name: Maria Hernandez, Country: Mexico, City: Guadalajara, Gender: F, GPA: 3.5
+Full Name: Maria Hernandez, Country: Mexico, City: Guadalajara, Gender: F, GPA: 3.4
+
+Index 50:
+Full Name: Maja Nicholson, Country: United States of America, City: Dallas, Gender: F, GPA: 3.4
+Full Name: Karla Hernandez, Country: Mexico, City: Guadalajara, Gender: F, GPA: 3.7
+
+Index 51:
+Full Name: Pablo Fernandez, Country: Spain, City: Valencia, Gender: M, GPA: 3.6
+Full Name: Emma Johnson, Country: United States, City: New York, Gender: F, GPA: 3.8
+Full Name: Anna Kowalski, Country: Poland, City: Warsaw, Gender: F, GPA: 3.8
+
+Index 52:
+Full Name: Emma Wilson, Country: United Kingdom, City: London, Gender: F, GPA: 3.8
+Full Name: Juan Lopez, Country: Colombia, City: Bogota, Gender: M, GPA: 3.7
+
+Index 53:
+
+Index 54:
+Full Name: Dakota Wirth, Country: United States of America, City: Sacramento, Gender: F, GPA: 3.4
+Full Name: Taro Nakamura, Country: Japan, City: Osaka, Gender: M, GPA: 3.9
+Full Name: Alina Petrova, Country: Russia, City: Moscow, Gender: F, GPA: 3.7
+Full Name: Maria Santos, Country: Portugal, City: Lisbon, Gender: F, GPA: 3.5
+
+Index 55:
+Full Name: Sila Nguyen, Country: China, City: Hebi, Gender: M, GPA: 2.8
+Full Name: Reilly Wagar, Country: United States of America, City: Modesto, Gender: F, GPA: 3.4
+Full Name: Emre Yilmaz, Country: Turkey, City: Istanbul, Gender: M, GPA: 3.5
+Full Name: Aya Hashimoto, Country: Japan, City: Kyoto, Gender: F, GPA: 3.9
+
+Index 56:
+Full Name: Paulo Silva, Country: Brazil, City: Rio de Janeiro, Gender: M, GPA: 3.5
+
+Index 57:
+Full Name: Brandon Barbour, Country: United States of America, City: South Hill, Gender: M, GPA: 3.9
+Full Name: Ivan Ivanov, Country: Bulgaria, City: Sofia, Gender: M, GPA: 3.6
+Full Name: Isabella Rossi, Country: Italy, City: Rome, Gender: F, GPA: 3.8
+
+Index 58:
+Full Name: Kyle Luckey, Country: United States of America, City: Moreno Valley, Gender: M, GPA: 3.7
+Full Name: Victoria Ibarra, Country: Dominican Republic, City: Santo Domingo, Gender: F, GPA: 3.4
+Full Name: Marco Rossi, Country: Italy, City: Rome, Gender: M, GPA: 3.8
+Full Name: Mohammed Abdelaziz, Country: Egypt, City: Cairo, Gender: M, GPA: 3.6
+
+Index 59:
+Full Name: Alexei Ivanov, Country: Russia, City: Moscow, Gender: M, GPA: 3.9
+
+Index 60:
+Full Name: Juan Ramirez, Country: Colombia, City: BogotÃ¡, Gender: M, GPA: 3.9
+
+Index 61:
+
+Index 62:
+Full Name: Lauren Klocker, Country: United States of America, City: Los Angeles, Gender: F, GPA: 2.3
+Full Name: Nour Alsharif, Country: Jordan, City: Amman, Gender: F, GPA: 3.5
+Full Name: Sophie Dubois, Country: France, City: Paris, Gender: F, GPA: 3.8
+
+Index 63:
+Full Name: Thiago Oliveira, Country: Brazil, City: SÃ£o Paulo, Gender: M, GPA: 3.3
+
+Index 64:
+
+Index 65:
+Full Name: Sophie Smith, Country: United Kingdom, City: Manchester, Gender: F, GPA: 3.4
+Full Name: Yuji Nakamura, Country: Japan, City: Osaka, Gender: M, GPA: 3.9
+Full Name: Hiroshi Sato, Country: Japan, City: Tokyo, Gender: M, GPA: 3.8
+
+Index 66:
+Full Name: Joshua Lonaker, Country: United States of America, City: Santa Clarita, Gender: M, GPA: 2.9
+Full Name: Alexander Sherman, Country: United States of America, City: Omaha, Gender: M, GPA: 3.8
+
+Index 67:
+Full Name: John Wilson, Country: United States, City: New York City, Gender: M, GPA: 3.4
+Full Name: Khaled AlSaad, Country: Saudi Arabia, City: Riyadh, Gender: M, GPA: 3.9
+
+Index 68:
+
+Index 69:
+Full Name: Sofia Torres, Country: Argentina, City: Buenos Aires, Gender: F, GPA: 3.5
+
+Index 70:
+Full Name: Ivan Petrov, Country: Bulgaria, City: Plovdiv, Gender: M, GPA: 3.4
+
+Index 71:
+
+Index 72:
+Full Name: Alexei Petrov, Country: Russia, City: Novosibirsk, Gender: M, GPA: 3.4
+
+Index 73:
+
+Index 74:
+
+Index 75:
+
+Index 76:
+Full Name: Kolbi Strunk, Country: United States of America, City: Mission Viejo, Gender: M, GPA: 3.2
+
+Index 77:
+Full Name: Brittany Sath, Country: Japan, City: Tokyo, Gender: F, GPA: 4
+Full Name: Oliver Brown, Country: United Kingdom, City: Edinburgh, Gender: M, GPA: 3.5
+Full Name: Maria Rodriguez, Country: Spain, City: Madrid, Gender: F, GPA: 3.9
+
+Index 78:
+
+Index 79:
+
+Index 80:
+
+Index 81:
+Full Name: Rochelle Johnson, Country: United States of America, City: Indianapolis, Gender: F, GPA: 3.4
+
+Index 82:
+
+Index 83:
+
+Index 84:
+
+Index 85:
+
+Index 86:
+Full Name: Hana Lee, Country: South Korea, City: Busan, Gender: F, GPA: 3.5
+
+Index 87:
+
+Index 88:
+
+Index 89:
+Full Name: Ahmed Ali, Country: Egypt, City: Alexandria, Gender: M, GPA: 3.3
+
+Index 90:
+
+Index 91:
+
+Index 92:
+Full Name: Dmitry Ivanov, Country: Russia, City: St. Petersburg, Gender: M, GPA: 3.6
+Full Name: Lee Chen, Country: China, City: Shanghai, Gender: F, GPA: 3.6
+
+Index 93:
+
+Index 94:
+Full Name: Natasha Yarusso, Country: United States of America, City: Castro Valley, Gender: F, GPA: 3.3
+
+Index 95:
+
+Index 96:
+Full Name: Aisha Ali, Country: United Arab Emirates, City: Dubai, Gender: F, GPA: 3.5
+
+Index 97:
+Full Name: Ahmed Khan, Country: Pakistan, City: Karachi, Gender: M, GPA: 3.4
+Full Name: Dmitry Popov, Country: Russia, City: Kazan, Gender: M, GPA: 3.4
+
+Index 98:
+
+Index 99:
+Full Name: Aleksandr Smirnov, Country: Russia, City: Moscow, Gender: M, GPA: 3.6
+
+Total collisions: 53
+1. Insert
+2. Delete
+3. Update
+4. Search
+5. Print
+6. Exit
+4
+Enter the name of the student: 
+Blake Williams
+Node not found
+1. Insert
+2. Delete
+3. Update
+4. Search
+5. Print
+6. Exit
+6
+]0;brw020@turing: ~/PF2/HW6[01;32mbrw020@turing[00m:[01;34m~/PF2/HW6[00m$ exit
+exit
+
+Script done on 2023-04-21 10:46:18-0500
