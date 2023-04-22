@@ -53,14 +53,14 @@ while(temp != NULL)
 //Insert new node
 
 if(tail != NULL){
-    cout<<"Inserting node"<<endl;
+    
 
     tail->setnext(new student_node(full_name,country,city,gender,gpa));
    
 }
 
 else{
-    cout<<"Inserting head"<<endl;
+    
     head = new student_node(full_name,country,city,gender,gpa); 
 
 }

@@ -151,6 +151,8 @@ int main(){
 
         case(6):
             //Exit
+            table.print();
+
             x = 1;
             break;
 
