@@ -61,7 +61,7 @@ bool student_hash::deleteNode(string full_name){
 
 bool student_hash::update(string full_name, string country, string city, string gender, double gpa){
     int index = Hash(full_name);
-    return table[index].insertNode(full_name,country,city,gender,gpa);
+    return table[index].updateNodes(full_name,country,city,gender,gpa);
 
 
 }

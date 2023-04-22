@@ -138,6 +138,8 @@ if(temp == NULL){
     return false;
 }
 else{
+
+    
     cout<<"Updating node"<<endl;
 
     temp -> setfull_name(full_name);
