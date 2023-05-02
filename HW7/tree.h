@@ -37,6 +37,7 @@ class BinaryTree{
     bool Delete (string Key);
     void Print();
     void Print(ofstream & dout);
+    void balance();
 
     private:
 
@@ -50,6 +51,8 @@ class BinaryTree{
     void deleteNode (node *&Tree);
     void PrintHelper(node * Tree);
    void  PrintHelper(node * Tree, ofstream & dout);
+    void balanceHelper(node *&Tree);
+    
     node *root;
 
 };

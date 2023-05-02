@@ -205,3 +205,5 @@ void BinaryTree::Print(ofstream &dout){
 }
 
 
+//Balance Function
+
