@@ -3,11 +3,12 @@
 #include <vector>
 #include <string>
 #include "book.h"
+#include "tree.h"
 using namespace std;
 
-void readFile(vector <Book> &books){
+void readFile(const string filename, BinaryTree &tree){
     ifstream infile;
-    infile.open("books.csv");
+    infile.open(filename);
     if(infile.fail()){
         cout << "Error opening file" << endl;
         exit(1);
@@ -39,7 +40,9 @@ void readFile(vector <Book> &books){
             // Creates a new book object and appends it to the vector
 
             Book book(year, title, authorLast, authorFirst, genre, rating);
-            books.push_back(book);
+            tree.Insert(book);
+            
+            
 
         }
 
@@ -55,35 +58,134 @@ void readFile(vector <Book> &books){
 
 
 
-void writeFile(vector <Book> &books, string filename){
-    ofstream outfile;
-    outfile.open(filename);
-    if(outfile.fail()){
-        cout << "Error opening file" << endl;
-        exit(1);
-    }
-    else{
-        for(int i = 0; i < int(books.size()); i++){
-            outfile << books[i].getYear() << ", ";
-            outfile << books[i].getTitle() << ", ";
-            outfile << books[i].getAuthorLast() << ", ";
-            outfile << books[i].getAuthorFirst() << ", ";
-            outfile << books[i].getGenre() << ", ";
-            outfile << books[i].getRating() << endl;
+void menu(){
 
-        }
+    cout<<"1. Load"<<endl;
+    cout<<"2. Search"<<endl;
+    cout<<"3. Insert"<<endl;
+    cout<<"4. Delete"<<endl;
+    cout<<"5. Print"<<endl;
+    cout<<"6. Exit"<<endl;
 
-    }
-
-    outfile.close();
 }
 
 
-
-
 int main(){
+    
+BinaryTree Tree;
 
+int x = 0;
 
+    while(x != 1){
+        int selection;
+        menu();
+        while(!(cin >> selection)){
+    cout << "Please enter a valid number" << endl; 
+    cin.clear();
+    cin.ignore(123,'\n');
+        }
+
+    switch(selection){
+
+    // Load
+
+    case 1:
+    {
+        cout << "Enter the name of the file you would like to load" << endl;
+        string filename;
+        cin >> filename;
+        readFile(filename, Tree);
+        
+        break;
+    }
+     case 2:
+    {
+        cout << "Enter the title of the book you would like to search for" << endl;
+        string title;
+        cin >> title;
+        if(Tree.Search(title)){
+            cout << "Book found" << endl;
+        }
+        else{
+            cout << "Book not found" << endl;
+
+        }
+        
+        break;
+    }
+
+    case 3:
+    {
+        cout << "Enter the title of the book you would like to insert" << endl;
+        string title;
+        cin >> title;
+        if(Tree.Search(title)){
+            cout << "Book already exists" << endl;
+        }
+        else{
+            cout << "Enter the year of the book" << endl;
+            int year;
+            cin >> year;
+            cout << "Enter the author's last name" << endl;
+            string authorLast;
+            cin >> authorLast;
+            cout << "Enter the author's first name" << endl;
+            string authorFirst;
+            cin >> authorFirst;
+            cout << "Enter the genre of the book" << endl;
+            string genre;
+            cin >> genre;
+            cout << "Enter the rating of the book" << endl;
+            float rating;
+            cin >> rating;
+            Book book(year, title, authorLast, authorFirst, genre, rating);
+            Tree.Insert(book);
+            //Tree.balance();
+            cout << "Book inserted" << endl;
+        }
+        break;
+    }
+
+    case 4:
+    {
+        cout << "Enter the title of the book you would like to delete" << endl;
+        string title;
+        cin >> title;
+        if(Tree.Search(title)){
+            Tree.Delete(title);
+            cout << "Book deleted" << endl;
+        }
+        else{
+            cout << "Book not found" << endl;
+
+        }
+        break;
+    }
+
+    case 5:
+    {
+        Tree.Print();
+        break;
+    }
+
+    case 6:
+    {
+        x = 1;
+        break;
+    }
+
+    default:
+    {
+        cout << "Please enter a valid number" << endl;
+        break;
+    }
+
+    }
+
+   
 
     
+}
+
+return 0;
 }

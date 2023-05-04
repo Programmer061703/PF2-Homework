@@ -1,4 +1,5 @@
 #include "tree.h"
+#include "book.h"
 #include <iostream>
 using namespace std;
 
@@ -7,33 +8,13 @@ using namespace std;
 
 BinaryTree::BinaryTree(){
     root = NULL;
-}
-
-// Copy Constructor
-
-BinaryTree::BinaryTree(const BinaryTree &copy){
-    copyTree(copy.root, root);
+    Count = 0;
 }
 
 // Destructor
 
 BinaryTree::~BinaryTree(){
     destroyTree(root);
-}
-
-// Copy Constructor Helper
-
-void BinaryTree::copyTree(node *Tree1, node *&Tree2){
-    if (Tree1 == NULL){
-        Tree2 = NULL;
-    }
-    else{
-        Tree2 = new node;
-        Tree2->Key = Tree1->Key;
-        Tree2->Value = Tree1->Value;
-        copyTree(Tree1->left, Tree2->left);
-        copyTree(Tree1->right, Tree2->right);
-    }
 }
 
 
@@ -49,25 +30,25 @@ void BinaryTree::destroyTree(node *Tree){
 
 // Search Function
 
-bool BinaryTree::Search (string Key, string &Value){
-    return searchHelper(Key, Value, root);
+bool BinaryTree::Search (string title){
+    return searchHelper(title, root);
 }
 
 // Search Function Helper
 
-bool BinaryTree::searchHelper (string Key, string &Value, node *Tree){
+bool BinaryTree::searchHelper (string title, node *Tree){
     if (Tree == NULL){
         return false;
     }
-    else if (Tree->Key == Key){
-        Value = Tree->Value;
+    else if (Tree->title == title){
+        Tree->book.print();
         return true;
     }
-    else if (Key < Tree->Key){
-        return searchHelper(Key, Value, Tree->left);
+    else if (title < Tree->title){
+        return searchHelper(title, Tree->left);
     }
-    else if(Key > Tree->Key){
-        return searchHelper(Key, Value, Tree->right);
+    else if(title > Tree->title){
+        return searchHelper(title, Tree->right);
     }
     else{
         return false;
@@ -78,30 +59,27 @@ bool BinaryTree::searchHelper (string Key, string &Value, node *Tree){
 
 // Insert Function
 
-bool BinaryTree::Insert (string Key, string Value){
-    return insertHelper(Key, Value, root);
+bool BinaryTree::Insert (Book book){
+    return insertHelper(book, root);
 }
 
-// Insert Function Helper
+// Insert Function Helper using .getTitle() to compare
 
-bool BinaryTree::insertHelper (string Key, string Value, node *&Tree){
+bool BinaryTree::insertHelper (Book book,node *&Tree){
+    
     if (Tree == NULL){
         Tree = new node;
-        Tree->Key = Key;
-        Tree->Value = Value;
+        Tree->title = book.getTitle();
+        Tree->book = book;
         Tree->left = NULL;
         Tree->right = NULL;
         return true;
     }
-    else if (Tree->Key == Key){
-        Tree->Value = Value;
-        return true;
+    else if (book.getTitle() < Tree->title){
+        return insertHelper(book, Tree->left);
     }
-    else if (Key <= Tree->Key){
-        return insertHelper(Key, Value, Tree->left);
-    }
-    else if (Key > Tree->Key){
-        return insertHelper(Key, Value, Tree->right);
+    else if (book.getTitle() > Tree->title){
+        return insertHelper(book, Tree->right);
     }
     else{
         return false;
@@ -110,27 +88,27 @@ bool BinaryTree::insertHelper (string Key, string Value, node *&Tree){
 
 //Delete Node Function
 
-bool BinaryTree::Delete (string Key){
-    return deleteHelper(Key, root);
+bool BinaryTree::Delete (string title){
+    return deleteHelper(title, root);
 }
 
 //Delete Function Helper
 
-bool BinaryTree::deleteHelper (string Key, node *&Tree){
+bool BinaryTree::deleteHelper (string title, node *&Tree){
     if (Tree == NULL){
         return false;
     }
 
-    else if (Tree->Key == Key){
+    else if (Tree->title == title){
         deleteNode(Tree);
         return true;
     }
 
-    else if (Key < Tree->Key){
-        return deleteHelper(Key, Tree->left);
+    else if (title < Tree->title){
+        return deleteHelper(title, Tree->left);
     }
-    else if (Key > Tree->Key){
-        return deleteHelper(Key, Tree->right);
+    else if (title > Tree->title){
+        return deleteHelper(title, Tree->right);
     }
     else{
         deleteNode(Tree);
@@ -152,21 +130,14 @@ void BinaryTree::deleteNode (node *&Tree){
         delete temp;
     }
     else{
-        node *current = Tree->left;
-        node *parent = NULL;
-        while (current->right != NULL){
-            parent = current;
-            current = current->right;
+        temp = Tree->right;
+        while (temp->left != NULL){
+            temp = temp->left;
         }
-        Tree->Key = current->Key;
-        Tree->Value = current->Value;
-        if (parent == NULL){
-            Tree->left = current->left;
-        }
-        else{
-            parent->right = current->left;
-        }
-        delete current;
+        temp->left = Tree->left;
+        temp = Tree;
+        Tree = Tree->right;
+        delete temp;
     }
 }
 
@@ -177,7 +148,7 @@ void BinaryTree::deleteNode (node *&Tree){
 void BinaryTree::PrintHelper(node *Tree){
     if (Tree != NULL){
         PrintHelper(Tree->left);
-        cout << Tree->Key << " " << Tree->Value << endl;
+        Tree->book.print();
         PrintHelper(Tree->right);
     }
 }
@@ -192,8 +163,9 @@ void BinaryTree::Print(){
 void BinaryTree::PrintHelper(node *Tree, ofstream &dout){
     if (Tree != NULL){
         PrintHelper(Tree->left, dout);
-        dout << Tree->Key << " " << Tree->Value << endl;
+        dout<<Tree->book.getTitle()<<endl;
         PrintHelper(Tree->right, dout);
+
     }
 }
 
@@ -206,4 +178,69 @@ void BinaryTree::Print(ofstream &dout){
 
 
 //Balance Function
+
+void BinaryTree::BalanceHelper(Book data[], int low, int high, node* &Tree) 
+{
+   // Terminating condition
+   if (low > high) return;
+
+   // Insert root value
+   int mid = (low + high) / 2;
+   insertHelper(data[mid], Tree);
+
+   // Insert data on left
+   BalanceHelper(data, low, mid-1, Tree->left);
+
+   // Insert data on right
+   BalanceHelper(data, mid+1, high, Tree->right);
+}
+
+
+//Balance Function
+
+void BinaryTree::balance()
+{
+    // Create temporary array
+    
+    Book data[Count];
+    
+    // Extract data into array
+    int count = 0;
+    ExtractHelper(data, count, root);
+    
+    
+    root = NULL; // Reset tree
+    Count = 0; // Reset count
+    
+    // Rebuild tree
+    BalanceHelper(data, 0, Count-1, root);
+}
+
+
+
+//Extract Function Helper
+
+void BinaryTree::ExtractHelper(Book data[], int &index,  node *Tree) 
+{
+    // Terminating condition
+   if (Tree == NULL)
+      return;
+
+   // Traverse binary tree
+   else
+   {
+      ExtractHelper(data, index, Tree->left);
+      data[index++] = Tree->book;
+      ExtractHelper(data, index, Tree->right);
+   }
+}
+
+//Extract Function
+
+void BinaryTree::Extract(Book data[], int &count)
+{
+    count = 0; // Reset count
+    ExtractHelper(data, count, root);
+
+}
 

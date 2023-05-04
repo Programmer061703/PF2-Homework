@@ -4,16 +4,17 @@
 #include <string>
 #include <fstream>
 #include <iomanip>
+#include "book.h"
 using namespace std;
 
 
 class node{
 // BinaryTree data node definition
 public:
-    string Key;
+    string title;
     node *left;
     node *right;
-    string Value;
+    Book book; // Book data
 
     
 
@@ -27,33 +28,43 @@ class BinaryTree{
 
     // Constructor
     BinaryTree();
-    BinaryTree(const BinaryTree &copy);
     ~BinaryTree();
 
     //Operators
 
-    bool Search (string Key, string &Value);
-    bool Insert (string Key, string Value);
-    bool Delete (string Key);
+    bool Search (string title);
+    bool Insert (Book book);
+    bool Delete (string title);
     void Print();
     void Print(ofstream & dout);
     void balance();
+    
+    void Extract(Book data[], int &count);
+
 
     private:
-
     // Private functions
-
-    void copyTree(node *Tree1, node *&Tree2);
+     int Count;
     void destroyTree(node *Tree);
-    bool searchHelper (string key, string &Value, node *Tree);
-    bool insertHelper (string Key, string Value, node *&Tree);
-    bool deleteHelper (string Key, node *&Tree);
+
+    bool searchHelper (string title, node *Tree);
+
+    bool insertHelper (Book book, node *&Tree);
+
+    bool deleteHelper (string title, node *&Tree);
     void deleteNode (node *&Tree);
+
     void PrintHelper(node * Tree);
    void  PrintHelper(node * Tree, ofstream & dout);
-    void balanceHelper(node *&Tree);
-    
+
+    void BalanceHelper(Book data[], int low, int high, node* &Tree);
+
+    void heightHelper(node *Tree, int &height, int &maxHeight);
+
+    void ExtractHelper(Book data[], int &index, node *Tree);
+    void height();
     node *root;
+    
 
 };
 
