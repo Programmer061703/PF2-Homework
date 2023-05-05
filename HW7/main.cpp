@@ -77,7 +77,7 @@ int main(){
 BinaryTree Tree;
 
 int x = 0;
-int count = 0;
+
 
     while(x != 1){
         int selection;

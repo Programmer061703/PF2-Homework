@@ -1,138 +1,21 @@
-Script started on 2023-05-04 17:48:47-0500
-]0;brw020@turing: ~/PF2/HW7[01;32mbrw020@turing[00m:[01;34m~/PF2/HW7[00m$ exit[2Plsmkdir HW7[1@ [C[C[C[C[C[C[Cls[Kcd PF2[4Plsexitscript williams_HW6.txtcd HW6[KPF2[2Pexit./main.exeg++ -Wall *.cpp -o main.exe
-]0;brw020@turing: ~/PF2/HW7[01;32mbrw020@turing[00m:[01;34m~/PF2/HW7[00m$ g++ -Wall *.cpp -o main.exe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[2Plsmkdir HW7[1@ [C[C[C[C[C[C[Cls[Kcd PF2[4Plsexitscript williams_HW6.txtcd HW6[KPF2[2Pexit./main.exe
+Script started on 2023-05-04 21:04:04-0500
+]0;brw020@turing: ~/PF2/HW7[01;32mbrw020@turing[00m:[01;34m~/PF2/HW7[00m$ script williams_HW7.txt[K./[K[K/.,\\[K[K[K[K[K./main.exe
 1. Load
 2. Search
 3. Insert
 4. Delete
 5. Print
 6. Exit
-1
+book\     1
 Enter the name of the file you would like to load
-books.csv
+books.sc  csv
 1. Load
 2. Search
 3. Insert
 4. Delete
 5. Print
 6. Exit
-2
-Enter the title of the book you would like to search for
-Duck On A Bike
-Book not found
-1. Load
-2. Search
-3. Insert
-4. Delete
-5. Print
-6. Exit
-Please enter a valid number
-2
-Enter the title of the book you would like to search for
-^^?  Haunted
-Year: 1961
-Title: Haunted
-Author's Last Name: Roche
-Author's First Name: Deshawn
-Genre: Horror
-Rating: 5
-Book found
-1. Load
-2. Search
-3. Insert
-4. Delete
-5. Print
-6. Exit
-3
-Enter the title of the book you would like to insert
-Test
-Enter the year of the book
-2020
-Enter the author's last name
-Test
-Enter the author's first name
-TEst   est
-Enter the genre of the book
-Test
-Enter the rating of the book
-5
-Book inserted
-1. Load
-2. Search
-3. Insert
-4. Delete
-5. Print
-6. Exit
-2
-Enter the title of the book you would like to search for
-Test
-Year: 2020
-Title: Test
-Author's Last Name: Test
-Author's First Name: Test
-Genre: Test
-Rating: 5
-Book found
-1. Load
-2. Search
-3. Insert
-4. Delete
-5. Print
-6. Exit
-4
-Enter the title of the book you would like to delete
-
-Test
-Year: 2020
-Title: Test
-Author's Last Name: Test
-Author's First Name: Test
-Genre: Test
-Rating: 5
-Book deleted
-1. Load
-2. Search
-3. Insert
-4. Delete
-5. Print
-6. Exit
-4
-Enter the title of the book you would like to delete
-Haunted
-Year: 1961
-Title: Haunted
-Author's Last Name: Roche
-Author's First Name: Deshawn
-Genre: Horror
-Rating: 5
-Book deleted
-1. Load
-2. Search
-3. Insert
-4. Delete
-5. Print
-6. Exit
-2
-Enter the title of the book you would like to search for
-Test
-Book not found
-1. Load
-2. Search
-3. Insert
-4. Delete
-5. Print
-6. Exit
-2
-Enter the title of the book you would like to search for
-Haunted
-Book not found
-1. Load
-2. Search
-3. Insert
-4. Delete
-5. Print
-6. Exit
-5
+2 5
 Year: 1982
 Title: "A Child Called ""It"" (Dave Pelzer #1)"
 Author's Last Name: Jedlickova
@@ -17923,6 +17806,12 @@ Author's Last Name: Manzur
 Author's First Name: Cheri
 Genre: Thriller
 Rating: 9
+Year: 1961
+Title: Haunted
+Author's Last Name: Roche
+Author's First Name: Deshawn
+Genre: Horror
+Rating: 5
 Year: 1741
 Title: Haunted (The Mediator #5)
 Author's Last Name: Miccoli
@@ -59407,6 +59296,86 @@ Author's Last Name: Pattabhi
 Author's First Name: Thursa
 Genre: Fiction
 Rating: 7
+Number of books: 9880
+Height of tree: 30
+1. Load
+2. Search
+3. Insert
+4. Delete
+5. Print
+6. Exit
+2
+Enter the title of the book you would like to search for
+Haunted
+Year: 1961
+Title: Haunted
+Author's Last Name: Roche
+Author's First Name: Deshawn
+Genre: Horror
+Rating: 5
+Book found
+1. Load
+2. Search
+3. Insert
+4. Delete
+5. Print
+6. Exit
+3
+Enter the title of the book you would like to insert
+Test
+Enter the year of the book
+T 2020
+Enter the author's last name
+Test
+Enter the author's first name
+Test
+Enter the genre of the book
+Test
+Enter the rating of the book
+5
+Book inserted
+1. Load
+2. Search
+3. Insert
+4. Delete
+5. Print
+6. Exit
+2
+Enter the title of the book you would like to search for
+Test
+Year: 2020
+Title: Test
+Author's Last Name: Test
+Author's First Name: Test
+Genre: Test
+Rating: 5
+Book found
+1. Load
+2. Search
+3. Insert
+4. Delete
+5. Print
+6. Exit
+4
+Enter the title of the book you would like to delete
+Test
+Year: 2020
+Title: Test
+Author's Last Name: Test
+Author's First Name: Test
+Genre: Test
+Rating: 5
+Book deleted
+1. Load
+2. Search
+3. Insert
+4. Delete
+5. Print
+6. Exit
+2
+Enter the title of the book you would like to search for
+Test
+Book not found
 1. Load
 2. Search
 3. Insert
@@ -59417,4 +59386,4 @@ Rating: 7
 ]0;brw020@turing: ~/PF2/HW7[01;32mbrw020@turing[00m:[01;34m~/PF2/HW7[00m$ exit
 exit
 
-Script done on 2023-05-04 17:51:32-0500
+Script done on 2023-05-04 21:05:21-0500
