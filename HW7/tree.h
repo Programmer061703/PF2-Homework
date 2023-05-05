@@ -38,14 +38,16 @@ class BinaryTree{
     void Print();
     void Print(ofstream & dout);
     void balance();
-    int Height(int Value);
+    int Height();
+    int Count();
+
     
     void Extract(Book data[], int &count);
     
 
     private:
     // Private functions
-    
+     //int Count;
     void destroyTree(node *Tree);
 
     bool searchHelper (string title, node *Tree);
@@ -60,13 +62,11 @@ class BinaryTree{
 
     void BalanceHelper(Book data[], int low, int high, node* &Tree);
 
-    void heightHelper(node *Tree, int &height, int &maxHeight);
+    int heightHelper(node *Tree);
+    int countHelper(node *Tree);
+
 
     void ExtractHelper(Book data[], int &index, node *Tree);
-
-    void HeightHelper(int Value, node *Tree);
-    
-   int Value;
     
     node *root;
     

@@ -77,6 +77,7 @@ int main(){
 BinaryTree Tree;
 
 int x = 0;
+int count = 0;
 
     while(x != 1){
         int selection;
@@ -167,6 +168,10 @@ int x = 0;
     case 5:
     {
         Tree.Print();
+        
+        cout << "Number of books: " << Tree.Count() << endl;
+        int h = Tree.Height();
+        cout<< "Height of tree: " << h << endl;
         break;
     }
 

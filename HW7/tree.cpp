@@ -8,7 +8,7 @@ using namespace std;
 
 BinaryTree::BinaryTree(){
     root = NULL;
-    Count = 0;
+    
 }
 
 // Destructor
@@ -254,4 +254,42 @@ void BinaryTree::Extract(Book data[], int &count)
 
 
 
+
+int BinaryTree::Height(){
+    return heightHelper(root);
+}
+
+int BinaryTree::heightHelper(node *Tree){
+    if (Tree == NULL){
+        return 0;
+    }
+    else{
+        int leftHeight = heightHelper(Tree->left);
+        int rightHeight = heightHelper(Tree->right);
+        if (leftHeight > rightHeight){
+            return leftHeight + 1;
+        }
+        else{
+            return rightHeight + 1;
+        }
+    }
+}
+
+
+//Count Function
+
+int BinaryTree::Count(){
+    return countHelper(root);
+}
+
+//Count Function Helper
+
+int BinaryTree::countHelper(node *Tree){
+    if (Tree == NULL){
+        return 0;
+    }
+    else{
+        return countHelper(Tree->left) + countHelper(Tree->right) + 1;
+    }
+}
 
