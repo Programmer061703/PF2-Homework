@@ -8,7 +8,7 @@ using namespace std;
 
 BinaryTree::BinaryTree(){
     root = NULL;
-    Count = 0;
+    
 }
 
 // Destructor
@@ -198,23 +198,23 @@ void BinaryTree::BalanceHelper(Book data[], int low, int high, node* &Tree)
 
 //Balance Function
 
-void BinaryTree::balance()
-{
-    // Create temporary array
+// void BinaryTree::balance()
+// {
+//     // Create temporary array
     
-    Book data[Count];
+//     Book data[Count];
     
-    // Extract data into array
-    int count = 0;
-    ExtractHelper(data, count, root);
+//     // Extract data into array
+//     int count = 0;
+//     ExtractHelper(data, count, root);
     
     
-    root = NULL; // Reset tree
-    Count = 0; // Reset count
+//     root = NULL; // Reset tree
+//     Count = 0; // Reset count
     
-    // Rebuild tree
-    BalanceHelper(data, 0, Count-1, root);
-}
+//     // Rebuild tree
+//     BalanceHelper(data, 0, Count-1, root);
+// }
 
 
 
@@ -242,5 +242,43 @@ void BinaryTree::Extract(Book data[], int &count)
     count = 0; // Reset count
     ExtractHelper(data, count, root);
 
+}
+
+int BinaryTree::Height(){
+    return heightHelper(root);
+}
+
+int BinaryTree::heightHelper(node *Tree){
+    if (Tree == NULL){
+        return 0;
+    }
+    else{
+        int leftHeight = heightHelper(Tree->left);
+        int rightHeight = heightHelper(Tree->right);
+        if (leftHeight > rightHeight){
+            return leftHeight + 1;
+        }
+        else{
+            return rightHeight + 1;
+        }
+    }
+}
+
+
+//Count Function
+
+int BinaryTree::Count(){
+    return countHelper(root);
+}
+
+//Count Function Helper
+
+int BinaryTree::countHelper(node *Tree){
+    if (Tree == NULL){
+        return 0;
+    }
+    else{
+        return countHelper(Tree->left) + countHelper(Tree->right) + 1;
+    }
 }
 
