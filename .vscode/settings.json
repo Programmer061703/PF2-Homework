@@ -8,6 +8,7 @@
         "ostream": "cpp",
         "xutility": "cpp",
         "xlocale": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "iosfwd": "cpp"
     }
 }

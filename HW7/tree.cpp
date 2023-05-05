@@ -196,25 +196,25 @@ void BinaryTree::BalanceHelper(Book data[], int low, int high, node* &Tree)
 }
 
 
-//Balance Function
+// //Balance Function
 
-void BinaryTree::balance()
-{
-    // Create temporary array
+// void BinaryTree::balance()
+// {
+//     // Create temporary array
     
-    Book data[Count];
+//     Book data[Count];
     
-    // Extract data into array
-    int count = 0;
-    ExtractHelper(data, count, root);
+//     // Extract data into array
+//     int count = 0;
+//     ExtractHelper(data, count, root);
     
     
-    root = NULL; // Reset tree
-    Count = 0; // Reset count
+//     root = NULL; // Reset tree
+//     Count = 0; // Reset count
     
-    // Rebuild tree
-    BalanceHelper(data, 0, Count-1, root);
-}
+//     // Rebuild tree
+//     BalanceHelper(data, 0, Count-1, root);
+// }
 
 
 
@@ -243,4 +243,15 @@ void BinaryTree::Extract(Book data[], int &count)
     ExtractHelper(data, count, root);
 
 }
+ 
+
+
+
+
+
+
+
+
+
+
 
