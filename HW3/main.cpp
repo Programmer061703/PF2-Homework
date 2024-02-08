@@ -1,7 +1,3 @@
-//----------------------------------------------
-// Purpose: Starter code for homework 3 - you should use this code 
-// to read in your files instead of starting from scratch!
-//----------------------------------------------
 
 #include "password.h"
 #include <fstream>
