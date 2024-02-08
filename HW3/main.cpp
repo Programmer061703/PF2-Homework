@@ -312,7 +312,7 @@ int main()
 
 }
 
-// The funny for Cade
+
     string S = "In the first age of the sea when land was but a myth. Creatures arose from their silent slumber. Awakened by volcanos forming the lands, they ruled the ocean with an iron grip Then  dawn broke on the 7th day, a single warrior appeared upon the horizon. The beast payed no heed to his kin, and continued to rule the seas. Their arrogance would be their downfall He who had no name came to free the seas for all to use. Upon his brow came the smell of mead, in his right hand a large cutlass made from the bones of the old Gods From his lips came the quite wisper of freedom, as he sailed toward the creatures of the depths. For millenia this warrior with no name fought the creatures of the deep and used their dead bones to build his ship ";
     string P = "THEN CAME THE CHALLANGER";
     string F = "All the death brought rise to a grand challanger who was to strike down this foe so the creatures could continue to rule the seas It's hide was of iron and its mouth of steel. The challanger was bleached white from loss of sunlight at the depths of the ocean The Warrior steered his grand ship to face this Challanger, and their battle shook the world When the dust settled the warrior remained tall, holding the Challangers backbone in his hand. This victory came at a price. The Warrior had lost his right leg to the challangers mouth. Not to be detered from his quest of freedom, he grafted the Backbone of the challanger onto his leg and shall wear it till the end of time";
